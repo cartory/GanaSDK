@@ -1,0 +1,9 @@
+C:\Users\pedro.caricari\source\repos\GanaSDK\bin\Release\GanaSDK.dll.config
+C:\Users\pedro.caricari\source\repos\GanaSDK\bin\Release\GanaSDK.dll
+C:\Users\pedro.caricari\source\repos\GanaSDK\bin\Release\GanaSDK.pdb
+C:\Users\pedro.caricari\source\repos\GanaSDK\bin\Release\Oracle.ManagedDataAccess.dll
+C:\Users\pedro.caricari\source\repos\GanaSDK\obj\Release\GanaSDK.csproj.AssemblyReference.cache
+C:\Users\pedro.caricari\source\repos\GanaSDK\obj\Release\GanaSDK.csproj.CoreCompileInputs.cache
+C:\Users\pedro.caricari\source\repos\GanaSDK\obj\Release\GanaSDK.csproj.CopyComplete
+C:\Users\pedro.caricari\source\repos\GanaSDK\obj\Release\GanaSDK.dll
+C:\Users\pedro.caricari\source\repos\GanaSDK\obj\Release\GanaSDK.pdb
