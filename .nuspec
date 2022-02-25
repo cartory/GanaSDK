@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<!-- Required elements-->
+		<id>GanaSDK</id>
+		<version>1.0.0.1</version>
+		<authors>Pedro Caricari</authors>
+		<copyright>Copyright © HP Inc. 2022</copyright>
+		<description>SDK Tools For BG Development</description>
+		<!-- Optional elements -->
+		<title>GanaSDK</title>
+		<summary>BG SDK Tools</summary>
+		<icon>GanaIcon.png</icon>
+		<owners>Banco Ganadero S.A.</owners>
+		<projectUrl>https://github.com/cartory/GanaSDK</projectUrl>
+
+		<repository type="git" url="https://github.com/cartory/GanaSDK.git" branch="master"/>
+
+		<language>en-US</language>
+		
+		<license type="expression">MIT</license>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<tags>SDK,SDK Tools</tags>
+		<dependencies>
+			<dependency id="Oracle.ManagedDataAccess" version="19.14.0" />
+		</dependencies>
+		<frameworkAssemblies>
+			<frameworkAssembly assemblyName=".NetFramework4.5"  />
+		</frameworkAssemblies>
+	</metadata>
+	<files>
+		<file src="GanaIcon.png" target="GanaIcon.png" />
+	</files>
+</package>
