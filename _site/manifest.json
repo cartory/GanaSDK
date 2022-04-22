@@ -1,0 +1,258 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/pedro.caricari/source/repos/GanaSDK",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "DIg9HHa80ywfuburyfJ6IQKG6LkBFKGMsSz9swp9CuU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "+R2BD2BqCjUIv/rV3TTpay4IobznuvyvP7ctcVu+YaE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "V2CfO3T6YWbRN1/eKfGys+J0zL1AIy0Jvtw/lDFgglA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.DBConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.DBConnection.html",
+          "hash": "22d4cZ9jqE7K+94BnC6mBHuO3zB8N1kRMM3KEfXbs/4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.CodeRes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.CodeRes.html",
+          "hash": "aGNzsHGxWAEbzRJLBAtXz/l/z/kbhskyvIGNQzvfRI0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.JSON.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.JSON.html",
+          "hash": "+Wli3GET0FSNMIWcv96g17VdSAJqJLfdaFEx+dHdLfc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.RequestOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.RequestOptions.html",
+          "hash": "r9ejV7wdJmoeXVRHMfcZj2ShB18S/ZEFd7DBfv2uAHo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.RestRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.RestRequest.html",
+          "hash": "9/Je8JNiOXap0UXobjeKtv3PPFjcsFJAqNeMzalyNJs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.RestRequestOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.RestRequestOptions.html",
+          "hash": "+ajtuxjbkgwrLoSv+gUNNBfu8KpaIzyGIY6zltNwgj4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.RestResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.RestResponse.html",
+          "hash": "b2+H6V1Nb3NdyaatKSKJJot4FdhrxQCORg505KRH00k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.RestXmlAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.RestXmlAdapter.html",
+          "hash": "tyWVNdMVfed+PSAFvQ4+8R4YkboWLen0neB7koLJfn4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.XmlAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.XmlAdapter.html",
+          "hash": "7IzgcIqIcynfa/YjCcEB2kk731q6jzn2LnOuWLNdYiY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.XmlAdapter.html",
+          "hash": "r7OLNPw7+HZsx40sqXgdQDCAB0sxZumKw9FDuOqMpjk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/GanaSDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GanaSDK.html",
+          "hash": "fEh+guBet6nlWPqy8kcpymdy1Ki6P7e6s7SPjkEJ1uo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "HOk4Rrw2mmUkRgYW4mxktW9F+LkMJHr6Apw0Z55OdKg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 11,
+          "skipped_file_count": 10
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
