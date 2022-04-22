@@ -1,0 +1,870 @@
+### YamlMime:ManagedReference
+items:
+- uid: GanaSDK.DBConnection
+  commentId: T:GanaSDK.DBConnection
+  id: DBConnection
+  parent: GanaSDK
+  children:
+  - GanaSDK.DBConnection.Instance
+  - GanaSDK.DBConnection.NonQuery(System.String)
+  - GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+  - GanaSDK.DBConnection.Query(System.String)
+  - GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+  - GanaSDK.DBConnection.SetConnectionString(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DBConnection
+  nameWithType: DBConnection
+  fullName: GanaSDK.DBConnection
+  type: Class
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: DBConnection
+    path: core/DBConnection.cs
+    startLine: 11
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: public class DBConnection
+    content.vb: Public Class DBConnection
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: GanaSDK.DBConnection.Instance
+  commentId: P:GanaSDK.DBConnection.Instance
+  id: Instance
+  parent: GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: DBConnection.Instance
+  fullName: GanaSDK.DBConnection.Instance
+  type: Property
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Instance
+    path: core/DBConnection.cs
+    startLine: 13
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: public static DBConnection Instance { get; }
+    parameters: []
+    return:
+      type: GanaSDK.DBConnection
+    content.vb: Public Shared ReadOnly Property Instance As DBConnection
+  overload: GanaSDK.DBConnection.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: GanaSDK.DBConnection.SetConnectionString(System.String)
+  commentId: M:GanaSDK.DBConnection.SetConnectionString(System.String)
+  id: SetConnectionString(System.String)
+  parent: GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: SetConnectionString(String)
+  nameWithType: DBConnection.SetConnectionString(String)
+  fullName: GanaSDK.DBConnection.SetConnectionString(System.String)
+  type: Method
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: SetConnectionString
+    path: core/DBConnection.cs
+    startLine: 33
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: public DBConnection SetConnectionString(string connectionString)
+    parameters:
+    - id: connectionString
+      type: System.String
+    return:
+      type: GanaSDK.DBConnection
+    content.vb: Public Function SetConnectionString(connectionString As String) As DBConnection
+  overload: GanaSDK.DBConnection.SetConnectionString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+  commentId: M:GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+  id: Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+  parent: GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: Query<T>(Func<OracleCommand, T>)
+  nameWithType: DBConnection.Query<T>(Func<OracleCommand, T>)
+  fullName: GanaSDK.DBConnection.Query<T>(System.Func<Oracle.ManagedDataAccess.Client.OracleCommand, T>)
+  type: Method
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Query
+    path: core/DBConnection.cs
+    startLine: 78
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: public T Query<T>(Func<OracleCommand, T> callback)
+    parameters:
+    - id: callback
+      type: System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function Query(Of T)(callback As Func(Of OracleCommand, T)) As T
+  overload: GanaSDK.DBConnection.Query*
+  nameWithType.vb: DBConnection.Query(Of T)(Func(Of OracleCommand, T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GanaSDK.DBConnection.Query(Of T)(System.Func(Of Oracle.ManagedDataAccess.Client.OracleCommand, T))
+  name.vb: Query(Of T)(Func(Of OracleCommand, T))
+- uid: GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+  commentId: M:GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+  id: Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+  parent: GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: Query(Action<OracleCommand>)
+  nameWithType: DBConnection.Query(Action<OracleCommand>)
+  fullName: GanaSDK.DBConnection.Query(System.Action<Oracle.ManagedDataAccess.Client.OracleCommand>)
+  type: Method
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Query
+    path: core/DBConnection.cs
+    startLine: 98
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: public void Query(Action<OracleCommand> callback)
+    parameters:
+    - id: callback
+      type: System.Action{Oracle.ManagedDataAccess.Client.OracleCommand}
+    content.vb: Public Sub Query(callback As Action(Of OracleCommand))
+  overload: GanaSDK.DBConnection.Query*
+  nameWithType.vb: DBConnection.Query(Action(Of OracleCommand))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GanaSDK.DBConnection.Query(System.Action(Of Oracle.ManagedDataAccess.Client.OracleCommand))
+  name.vb: Query(Action(Of OracleCommand))
+- uid: GanaSDK.DBConnection.NonQuery(System.String)
+  commentId: M:GanaSDK.DBConnection.NonQuery(System.String)
+  id: NonQuery(System.String)
+  parent: GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: NonQuery(String)
+  nameWithType: DBConnection.NonQuery(String)
+  fullName: GanaSDK.DBConnection.NonQuery(System.String)
+  type: Method
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: NonQuery
+    path: core/DBConnection.cs
+    startLine: 107
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: public int NonQuery(string sql)
+    parameters:
+    - id: sql
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function NonQuery(sql As String) As Integer
+  overload: GanaSDK.DBConnection.NonQuery*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: GanaSDK.DBConnection.Query(System.String)
+  commentId: M:GanaSDK.DBConnection.Query(System.String)
+  id: Query(System.String)
+  parent: GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: Query(String)
+  nameWithType: DBConnection.Query(String)
+  fullName: GanaSDK.DBConnection.Query(System.String)
+  type: Method
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Query
+    path: core/DBConnection.cs
+    startLine: 130
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: public Dictionary<string, object>[] Query(string sql)
+    parameters:
+    - id: sql
+      type: System.String
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}[]
+    content.vb: Public Function Query(sql As String) As Dictionary(Of String, Object)()
+  overload: GanaSDK.DBConnection.Query*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: GanaSDK
+  commentId: N:GanaSDK
+  name: GanaSDK
+  nameWithType: GanaSDK
+  fullName: GanaSDK
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GanaSDK.DBConnection.Instance*
+  commentId: Overload:GanaSDK.DBConnection.Instance
+  name: Instance
+  nameWithType: DBConnection.Instance
+  fullName: GanaSDK.DBConnection.Instance
+- uid: GanaSDK.DBConnection
+  commentId: T:GanaSDK.DBConnection
+  parent: GanaSDK
+  name: DBConnection
+  nameWithType: DBConnection
+  fullName: GanaSDK.DBConnection
+- uid: GanaSDK.DBConnection.SetConnectionString*
+  commentId: Overload:GanaSDK.DBConnection.SetConnectionString
+  name: SetConnectionString
+  nameWithType: DBConnection.SetConnectionString
+  fullName: GanaSDK.DBConnection.SetConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: GanaSDK.DBConnection.Query*
+  commentId: Overload:GanaSDK.DBConnection.Query
+  name: Query
+  nameWithType: DBConnection.Query
+  fullName: GanaSDK.DBConnection.Query
+- uid: System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,{T}}
+  commentId: T:System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<OracleCommand, T>
+  nameWithType: Func<OracleCommand, T>
+  fullName: System.Func<Oracle.ManagedDataAccess.Client.OracleCommand, T>
+  nameWithType.vb: Func(Of OracleCommand, T)
+  fullName.vb: System.Func(Of Oracle.ManagedDataAccess.Client.OracleCommand, T)
+  name.vb: Func(Of OracleCommand, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+    name: OracleCommand
+    nameWithType: OracleCommand
+    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+    name: OracleCommand
+    nameWithType: OracleCommand
+    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Action{Oracle.ManagedDataAccess.Client.OracleCommand}
+  commentId: T:System.Action{Oracle.ManagedDataAccess.Client.OracleCommand}
+  parent: System
+  definition: System.Action`1
+  name: Action<OracleCommand>
+  nameWithType: Action<OracleCommand>
+  fullName: System.Action<Oracle.ManagedDataAccess.Client.OracleCommand>
+  nameWithType.vb: Action(Of OracleCommand)
+  fullName.vb: System.Action(Of Oracle.ManagedDataAccess.Client.OracleCommand)
+  name.vb: Action(Of OracleCommand)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+    name: OracleCommand
+    nameWithType: OracleCommand
+    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+    name: OracleCommand
+    nameWithType: OracleCommand
+    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GanaSDK.DBConnection.NonQuery*
+  commentId: Overload:GanaSDK.DBConnection.NonQuery
+  name: NonQuery
+  nameWithType: DBConnection.NonQuery
+  fullName: GanaSDK.DBConnection.NonQuery
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}[]
+  isExternal: true
+  name: Dictionary<String, Object>[]
+  nameWithType: Dictionary<String, Object>[]
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>[]
+  nameWithType.vb: Dictionary(Of String, Object)()
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)()
+  name.vb: Dictionary(Of String, Object)()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()

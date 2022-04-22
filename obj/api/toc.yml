@@ -1,0 +1,25 @@
+### YamlMime:TableOfContent
+- uid: GanaSDK
+  name: GanaSDK
+  items:
+  - uid: GanaSDK.DBConnection
+    name: DBConnection
+- uid: GanaSDK.XmlAdapter
+  name: GanaSDK.XmlAdapter
+  items:
+  - uid: GanaSDK.XmlAdapter.CodeRes
+    name: CodeRes
+  - uid: GanaSDK.XmlAdapter.JSON
+    name: JSON
+  - uid: GanaSDK.XmlAdapter.RequestOptions
+    name: RequestOptions
+  - uid: GanaSDK.XmlAdapter.RestRequest
+    name: RestRequest
+  - uid: GanaSDK.XmlAdapter.RestRequestOptions
+    name: RestRequestOptions
+  - uid: GanaSDK.XmlAdapter.RestResponse
+    name: RestResponse
+  - uid: GanaSDK.XmlAdapter.RestXmlAdapter
+    name: RestXmlAdapter
+  - uid: GanaSDK.XmlAdapter.XmlAdapter
+    name: XmlAdapter

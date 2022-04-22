@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: GanaSDK.XmlAdapter
+  commentId: N:GanaSDK.XmlAdapter
+  id: GanaSDK.XmlAdapter
+  children:
+  - GanaSDK.XmlAdapter.CodeRes
+  - GanaSDK.XmlAdapter.JSON
+  - GanaSDK.XmlAdapter.RequestOptions
+  - GanaSDK.XmlAdapter.RestRequest
+  - GanaSDK.XmlAdapter.RestRequestOptions
+  - GanaSDK.XmlAdapter.RestResponse
+  - GanaSDK.XmlAdapter.RestXmlAdapter
+  - GanaSDK.XmlAdapter.XmlAdapter
+  langs:
+  - csharp
+  - vb
+  name: GanaSDK.XmlAdapter
+  nameWithType: GanaSDK.XmlAdapter
+  fullName: GanaSDK.XmlAdapter
+  type: Namespace
+  assemblies:
+  - GanaSDK
+references:
+- uid: GanaSDK.XmlAdapter.JSON
+  commentId: T:GanaSDK.XmlAdapter.JSON
+  parent: GanaSDK.XmlAdapter
+  name: JSON
+  nameWithType: JSON
+  fullName: GanaSDK.XmlAdapter.JSON
+- uid: GanaSDK.XmlAdapter.RestRequest
+  commentId: T:GanaSDK.XmlAdapter.RestRequest
+  name: RestRequest
+  nameWithType: RestRequest
+  fullName: GanaSDK.XmlAdapter.RestRequest
+- uid: GanaSDK.XmlAdapter.CodeRes
+  commentId: T:GanaSDK.XmlAdapter.CodeRes
+  name: CodeRes
+  nameWithType: CodeRes
+  fullName: GanaSDK.XmlAdapter.CodeRes
+- uid: GanaSDK.XmlAdapter.RestResponse
+  commentId: T:GanaSDK.XmlAdapter.RestResponse
+  name: RestResponse
+  nameWithType: RestResponse
+  fullName: GanaSDK.XmlAdapter.RestResponse
+- uid: GanaSDK.XmlAdapter.RestRequestOptions
+  commentId: T:GanaSDK.XmlAdapter.RestRequestOptions
+  parent: GanaSDK.XmlAdapter
+  name: RestRequestOptions
+  nameWithType: RestRequestOptions
+  fullName: GanaSDK.XmlAdapter.RestRequestOptions
+- uid: GanaSDK.XmlAdapter.RestXmlAdapter
+  commentId: T:GanaSDK.XmlAdapter.RestXmlAdapter
+  name: RestXmlAdapter
+  nameWithType: RestXmlAdapter
+  fullName: GanaSDK.XmlAdapter.RestXmlAdapter
+- uid: GanaSDK.XmlAdapter.RequestOptions
+  commentId: T:GanaSDK.XmlAdapter.RequestOptions
+  parent: GanaSDK.XmlAdapter
+  name: RequestOptions
+  nameWithType: RequestOptions
+  fullName: GanaSDK.XmlAdapter.RequestOptions
+- uid: GanaSDK.XmlAdapter.XmlAdapter
+  commentId: T:GanaSDK.XmlAdapter.XmlAdapter
+  parent: GanaSDK.XmlAdapter
+  name: XmlAdapter
+  nameWithType: XmlAdapter
+  fullName: GanaSDK.XmlAdapter.XmlAdapter
+- uid: GanaSDK.XmlAdapter
+  commentId: N:GanaSDK.XmlAdapter
+  name: GanaSDK.XmlAdapter
+  nameWithType: GanaSDK.XmlAdapter
+  fullName: GanaSDK.XmlAdapter

@@ -1,0 +1,726 @@
+### YamlMime:ManagedReference
+items:
+- uid: GanaSDK.XmlAdapter.RestRequest
+  commentId: T:GanaSDK.XmlAdapter.RestRequest
+  id: RestRequest
+  parent: GanaSDK.XmlAdapter
+  children:
+  - GanaSDK.XmlAdapter.RestRequest.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
+  - GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: RestRequest
+  nameWithType: RestRequest
+  fullName: GanaSDK.XmlAdapter.RestRequest
+  type: Class
+  source:
+    remote:
+      path: core/XmlAdapter/RestRequest.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: RestRequest
+    path: core/XmlAdapter/RestRequest.cs
+    startLine: 10
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: 'public abstract class RestRequest : JSON'
+    content.vb: >-
+      Public MustInherit Class RestRequest
+          Inherits JSON
+  inheritance:
+  - System.Object
+  - GanaSDK.XmlAdapter.JSON
+  inheritedMembers:
+  - GanaSDK.XmlAdapter.JSON.ToJson
+  - GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  - GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+  - GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: GanaSDK.XmlAdapter.RestRequest.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:GanaSDK.XmlAdapter.RestRequest.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: GanaSDK.XmlAdapter.RestRequest
+  langs:
+  - csharp
+  - vb
+  name: RestRequest(Dictionary<String, String>)
+  nameWithType: RestRequest.RestRequest(Dictionary<String, String>)
+  fullName: GanaSDK.XmlAdapter.RestRequest.RestRequest(System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: core/XmlAdapter/RestRequest.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: .ctor
+    path: core/XmlAdapter/RestRequest.cs
+    startLine: 12
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: protected RestRequest(Dictionary<string, string> args)
+    parameters:
+    - id: args
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Protected Sub New(args As Dictionary(Of String, String))
+  overload: GanaSDK.XmlAdapter.RestRequest.#ctor*
+  nameWithType.vb: RestRequest.RestRequest(Dictionary(Of String, String))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: GanaSDK.XmlAdapter.RestRequest.RestRequest(System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: RestRequest(Dictionary(Of String, String))
+- uid: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate(System.Object)
+  commentId: M:GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate(System.Object)
+  id: ValidateAndCreate(System.Object)
+  parent: GanaSDK.XmlAdapter.RestRequest
+  langs:
+  - csharp
+  - vb
+  name: ValidateAndCreate(Object)
+  nameWithType: RestRequest.ValidateAndCreate(Object)
+  fullName: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate(System.Object)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/RestRequest.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: ValidateAndCreate
+    path: core/XmlAdapter/RestRequest.cs
+    startLine: 20
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: protected static Dictionary<string, string> ValidateAndCreate(object args)
+    parameters:
+    - id: args
+      type: System.Object
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Protected Shared Function ValidateAndCreate(args As Object) As Dictionary(Of String, String)
+  overload: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+references:
+- uid: GanaSDK.XmlAdapter
+  commentId: N:GanaSDK.XmlAdapter
+  name: GanaSDK.XmlAdapter
+  nameWithType: GanaSDK.XmlAdapter
+  fullName: GanaSDK.XmlAdapter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: GanaSDK.XmlAdapter.JSON
+  commentId: T:GanaSDK.XmlAdapter.JSON
+  parent: GanaSDK.XmlAdapter
+  name: JSON
+  nameWithType: JSON
+  fullName: GanaSDK.XmlAdapter.JSON
+- uid: GanaSDK.XmlAdapter.JSON.ToJson
+  commentId: M:GanaSDK.XmlAdapter.JSON.ToJson
+  parent: GanaSDK.XmlAdapter.JSON
+  name: ToJson()
+  nameWithType: JSON.ToJson()
+  fullName: GanaSDK.XmlAdapter.JSON.ToJson()
+  spec.csharp:
+  - uid: GanaSDK.XmlAdapter.JSON.ToJson
+    name: ToJson
+    nameWithType: JSON.ToJson
+    fullName: GanaSDK.XmlAdapter.JSON.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.JSON.ToJson
+    name: ToJson
+    nameWithType: JSON.ToJson
+    fullName: GanaSDK.XmlAdapter.JSON.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  commentId: M:GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  parent: GanaSDK.XmlAdapter.JSON
+  isExternal: true
+  name: ToJson(JsonSerializerSettings)
+  nameWithType: JSON.ToJson(JsonSerializerSettings)
+  fullName: GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  spec.csharp:
+  - uid: GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+    name: ToJson
+    nameWithType: JSON.ToJson
+    fullName: GanaSDK.XmlAdapter.JSON.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonSerializerSettings
+    name: JsonSerializerSettings
+    nameWithType: JsonSerializerSettings
+    fullName: Newtonsoft.Json.JsonSerializerSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+    name: ToJson
+    nameWithType: JSON.ToJson
+    fullName: GanaSDK.XmlAdapter.JSON.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonSerializerSettings
+    name: JsonSerializerSettings
+    nameWithType: JsonSerializerSettings
+    fullName: Newtonsoft.Json.JsonSerializerSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+  commentId: M:GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+  parent: GanaSDK.XmlAdapter.JSON
+  isExternal: true
+  name: FromJson<T>(String)
+  nameWithType: JSON.FromJson<T>(String)
+  fullName: GanaSDK.XmlAdapter.JSON.FromJson<T>(System.String)
+  nameWithType.vb: JSON.FromJson(Of T)(String)
+  fullName.vb: GanaSDK.XmlAdapter.JSON.FromJson(Of T)(System.String)
+  name.vb: FromJson(Of T)(String)
+  spec.csharp:
+  - uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+    name: FromJson<T>
+    nameWithType: JSON.FromJson<T>
+    fullName: GanaSDK.XmlAdapter.JSON.FromJson<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+    name: FromJson(Of T)
+    nameWithType: JSON.FromJson(Of T)
+    fullName: GanaSDK.XmlAdapter.JSON.FromJson(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+  commentId: M:GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+  parent: GanaSDK.XmlAdapter.JSON
+  isExternal: true
+  name: FromJson<T>(String, JsonSerializerSettings)
+  nameWithType: JSON.FromJson<T>(String, JsonSerializerSettings)
+  fullName: GanaSDK.XmlAdapter.JSON.FromJson<T>(System.String, Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType.vb: JSON.FromJson(Of T)(String, JsonSerializerSettings)
+  fullName.vb: GanaSDK.XmlAdapter.JSON.FromJson(Of T)(System.String, Newtonsoft.Json.JsonSerializerSettings)
+  name.vb: FromJson(Of T)(String, JsonSerializerSettings)
+  spec.csharp:
+  - uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+    name: FromJson<T>
+    nameWithType: JSON.FromJson<T>
+    fullName: GanaSDK.XmlAdapter.JSON.FromJson<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializerSettings
+    name: JsonSerializerSettings
+    nameWithType: JsonSerializerSettings
+    fullName: Newtonsoft.Json.JsonSerializerSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+    name: FromJson(Of T)
+    nameWithType: JSON.FromJson(Of T)
+    fullName: GanaSDK.XmlAdapter.JSON.FromJson(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializerSettings
+    name: JsonSerializerSettings
+    nameWithType: JsonSerializerSettings
+    fullName: Newtonsoft.Json.JsonSerializerSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GanaSDK.XmlAdapter.RestRequest.#ctor*
+  commentId: Overload:GanaSDK.XmlAdapter.RestRequest.#ctor
+  name: RestRequest
+  nameWithType: RestRequest.RestRequest
+  fullName: GanaSDK.XmlAdapter.RestRequest.RestRequest
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate*
+  commentId: Overload:GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate
+  name: ValidateAndCreate
+  nameWithType: RestRequest.ValidateAndCreate
+  fullName: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate

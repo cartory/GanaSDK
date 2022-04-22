@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: GanaSDK
+  commentId: N:GanaSDK
+  id: GanaSDK
+  children:
+  - GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: GanaSDK
+  nameWithType: GanaSDK
+  fullName: GanaSDK
+  type: Namespace
+  assemblies:
+  - GanaSDK
+references:
+- uid: GanaSDK.DBConnection
+  commentId: T:GanaSDK.DBConnection
+  parent: GanaSDK
+  name: DBConnection
+  nameWithType: DBConnection
+  fullName: GanaSDK.DBConnection
+- uid: GanaSDK
+  commentId: N:GanaSDK
+  name: GanaSDK
+  nameWithType: GanaSDK
+  fullName: GanaSDK

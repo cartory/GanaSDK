@@ -1,0 +1,544 @@
+### YamlMime:ManagedReference
+items:
+- uid: GanaSDK.XmlAdapter.RestXmlAdapter
+  commentId: T:GanaSDK.XmlAdapter.RestXmlAdapter
+  id: RestXmlAdapter
+  parent: GanaSDK.XmlAdapter
+  children:
+  - GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  - GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
+  langs:
+  - csharp
+  - vb
+  name: RestXmlAdapter
+  nameWithType: RestXmlAdapter
+  fullName: GanaSDK.XmlAdapter.RestXmlAdapter
+  type: Class
+  source:
+    remote:
+      path: core/XmlAdapter/RestXmlAdapter.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: RestXmlAdapter
+    path: core/XmlAdapter/RestXmlAdapter.cs
+    startLine: 34
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: 'public class RestXmlAdapter : XmlAdapter'
+    content.vb: >-
+      Public Class RestXmlAdapter
+          Inherits XmlAdapter
+  inheritance:
+  - System.Object
+  - GanaSDK.XmlAdapter.XmlAdapter
+  inheritedMembers:
+  - GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  commentId: M:GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  id: Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  parent: GanaSDK.XmlAdapter.RestXmlAdapter
+  langs:
+  - csharp
+  - vb
+  name: Fetch(RequestOptions)
+  nameWithType: RestXmlAdapter.Fetch(RequestOptions)
+  fullName: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/RestXmlAdapter.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Fetch
+    path: core/XmlAdapter/RestXmlAdapter.cs
+    startLine: 36
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: protected override string Fetch(RequestOptions requestOptions)
+    parameters:
+    - id: requestOptions
+      type: GanaSDK.XmlAdapter.RequestOptions
+    return:
+      type: System.String
+    content.vb: Protected Overrides Function Fetch(requestOptions As RequestOptions) As String
+  overridden: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  overload: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
+  commentId: M:GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
+  id: Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
+  parent: GanaSDK.XmlAdapter.RestXmlAdapter
+  langs:
+  - csharp
+  - vb
+  name: Fetch(String, RestRequestOptions)
+  nameWithType: RestXmlAdapter.Fetch(String, RestRequestOptions)
+  fullName: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String, GanaSDK.XmlAdapter.RestRequestOptions)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/RestXmlAdapter.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Fetch
+    path: core/XmlAdapter/RestXmlAdapter.cs
+    startLine: 53
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: public string Fetch(string URL, RestRequestOptions requestOptions)
+    parameters:
+    - id: URL
+      type: System.String
+    - id: requestOptions
+      type: GanaSDK.XmlAdapter.RestRequestOptions
+    return:
+      type: System.String
+    content.vb: Public Function Fetch(URL As String, requestOptions As RestRequestOptions) As String
+  overload: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: GanaSDK.XmlAdapter
+  commentId: N:GanaSDK.XmlAdapter
+  name: GanaSDK.XmlAdapter
+  nameWithType: GanaSDK.XmlAdapter
+  fullName: GanaSDK.XmlAdapter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: GanaSDK.XmlAdapter.XmlAdapter
+  commentId: T:GanaSDK.XmlAdapter.XmlAdapter
+  parent: GanaSDK.XmlAdapter
+  name: XmlAdapter
+  nameWithType: XmlAdapter
+  fullName: GanaSDK.XmlAdapter.XmlAdapter
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+  parent: GanaSDK.XmlAdapter.XmlAdapter
+  isExternal: true
+  name: ToXml(String, String)
+  nameWithType: XmlAdapter.ToXml(String, String)
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.String)
+  spec.csharp:
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+    name: ToXml
+    nameWithType: XmlAdapter.ToXml
+    fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+    name: ToXml
+    nameWithType: XmlAdapter.ToXml
+    fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  parent: GanaSDK.XmlAdapter.XmlAdapter
+  name: Fetch(RequestOptions)
+  nameWithType: XmlAdapter.Fetch(RequestOptions)
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+  spec.csharp:
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+    name: Fetch
+    nameWithType: XmlAdapter.Fetch
+    fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GanaSDK.XmlAdapter.RequestOptions
+    name: RequestOptions
+    nameWithType: RequestOptions
+    fullName: GanaSDK.XmlAdapter.RequestOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
+    name: Fetch
+    nameWithType: XmlAdapter.Fetch
+    fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GanaSDK.XmlAdapter.RequestOptions
+    name: RequestOptions
+    nameWithType: RequestOptions
+    fullName: GanaSDK.XmlAdapter.RequestOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch*
+  commentId: Overload:GanaSDK.XmlAdapter.RestXmlAdapter.Fetch
+  name: Fetch
+  nameWithType: RestXmlAdapter.Fetch
+  fullName: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch
+- uid: GanaSDK.XmlAdapter.RequestOptions
+  commentId: T:GanaSDK.XmlAdapter.RequestOptions
+  parent: GanaSDK.XmlAdapter
+  name: RequestOptions
+  nameWithType: RequestOptions
+  fullName: GanaSDK.XmlAdapter.RequestOptions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: GanaSDK.XmlAdapter.RestRequestOptions
+  commentId: T:GanaSDK.XmlAdapter.RestRequestOptions
+  parent: GanaSDK.XmlAdapter
+  name: RestRequestOptions
+  nameWithType: RestRequestOptions
+  fullName: GanaSDK.XmlAdapter.RestRequestOptions

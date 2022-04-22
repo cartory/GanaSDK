@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: GanaSDK.XmlAdapter.JSON
+  commentId: T:GanaSDK.XmlAdapter.JSON
+  id: JSON
+  parent: GanaSDK.XmlAdapter
+  children:
+  - GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+  - GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+  - GanaSDK.XmlAdapter.JSON.ToJson
+  - GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  langs:
+  - csharp
+  - vb
+  name: JSON
+  nameWithType: JSON
+  fullName: GanaSDK.XmlAdapter.JSON
+  type: Class
+  source:
+    remote:
+      path: core/XmlAdapter/Json.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: JSON
+    path: core/XmlAdapter/Json.cs
+    startLine: 9
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: public abstract class JSON
+    content.vb: Public MustInherit Class JSON
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - GanaSDK.XmlAdapter.RestRequest
+  - GanaSDK.XmlAdapter.RestResponse
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: GanaSDK.XmlAdapter.JSON.ToJson
+  commentId: M:GanaSDK.XmlAdapter.JSON.ToJson
+  id: ToJson
+  parent: GanaSDK.XmlAdapter.JSON
+  langs:
+  - csharp
+  - vb
+  name: ToJson()
+  nameWithType: JSON.ToJson()
+  fullName: GanaSDK.XmlAdapter.JSON.ToJson()
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/Json.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: ToJson
+    path: core/XmlAdapter/Json.cs
+    startLine: 11
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: public virtual string ToJson()
+    return:
+      type: System.String
+    content.vb: Public Overridable Function ToJson As String
+  overload: GanaSDK.XmlAdapter.JSON.ToJson*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  commentId: M:GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  id: ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  parent: GanaSDK.XmlAdapter.JSON
+  langs:
+  - csharp
+  - vb
+  name: ToJson(JsonSerializerSettings)
+  nameWithType: JSON.ToJson(JsonSerializerSettings)
+  fullName: GanaSDK.XmlAdapter.JSON.ToJson(Newtonsoft.Json.JsonSerializerSettings)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/Json.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: ToJson
+    path: core/XmlAdapter/Json.cs
+    startLine: 12
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: protected virtual string ToJson(JsonSerializerSettings settings)
+    parameters:
+    - id: settings
+      type: Newtonsoft.Json.JsonSerializerSettings
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function ToJson(settings As JsonSerializerSettings) As String
+  overload: GanaSDK.XmlAdapter.JSON.ToJson*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+  commentId: M:GanaSDK.XmlAdapter.JSON.FromJson``1(System.String)
+  id: FromJson``1(System.String)
+  parent: GanaSDK.XmlAdapter.JSON
+  langs:
+  - csharp
+  - vb
+  name: FromJson<T>(String)
+  nameWithType: JSON.FromJson<T>(String)
+  fullName: GanaSDK.XmlAdapter.JSON.FromJson<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/Json.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: FromJson
+    path: core/XmlAdapter/Json.cs
+    startLine: 14
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: public static T FromJson<T>(string json)
+    parameters:
+    - id: json
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function FromJson(Of T)(json As String) As T
+  overload: GanaSDK.XmlAdapter.JSON.FromJson*
+  nameWithType.vb: JSON.FromJson(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: GanaSDK.XmlAdapter.JSON.FromJson(Of T)(System.String)
+  name.vb: FromJson(Of T)(String)
+- uid: GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+  commentId: M:GanaSDK.XmlAdapter.JSON.FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+  id: FromJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)
+  parent: GanaSDK.XmlAdapter.JSON
+  langs:
+  - csharp
+  - vb
+  name: FromJson<T>(String, JsonSerializerSettings)
+  nameWithType: JSON.FromJson<T>(String, JsonSerializerSettings)
+  fullName: GanaSDK.XmlAdapter.JSON.FromJson<T>(System.String, Newtonsoft.Json.JsonSerializerSettings)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/Json.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: FromJson
+    path: core/XmlAdapter/Json.cs
+    startLine: 15
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: protected static T FromJson<T>(string json, JsonSerializerSettings settings)
+    parameters:
+    - id: json
+      type: System.String
+    - id: settings
+      type: Newtonsoft.Json.JsonSerializerSettings
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Protected Shared Function FromJson(Of T)(json As String, settings As JsonSerializerSettings) As T
+  overload: GanaSDK.XmlAdapter.JSON.FromJson*
+  nameWithType.vb: JSON.FromJson(Of T)(String, JsonSerializerSettings)
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: GanaSDK.XmlAdapter.JSON.FromJson(Of T)(System.String, Newtonsoft.Json.JsonSerializerSettings)
+  name.vb: FromJson(Of T)(String, JsonSerializerSettings)
+references:
+- uid: GanaSDK.XmlAdapter
+  commentId: N:GanaSDK.XmlAdapter
+  name: GanaSDK.XmlAdapter
+  nameWithType: GanaSDK.XmlAdapter
+  fullName: GanaSDK.XmlAdapter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GanaSDK.XmlAdapter.JSON.ToJson*
+  commentId: Overload:GanaSDK.XmlAdapter.JSON.ToJson
+  name: ToJson
+  nameWithType: JSON.ToJson
+  fullName: GanaSDK.XmlAdapter.JSON.ToJson
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Newtonsoft.Json.JsonSerializerSettings
+  commentId: T:Newtonsoft.Json.JsonSerializerSettings
+  parent: Newtonsoft.Json
+  isExternal: true
+  name: JsonSerializerSettings
+  nameWithType: JsonSerializerSettings
+  fullName: Newtonsoft.Json.JsonSerializerSettings
+- uid: Newtonsoft.Json
+  commentId: N:Newtonsoft.Json
+  isExternal: true
+  name: Newtonsoft.Json
+  nameWithType: Newtonsoft.Json
+  fullName: Newtonsoft.Json
+- uid: GanaSDK.XmlAdapter.JSON.FromJson*
+  commentId: Overload:GanaSDK.XmlAdapter.JSON.FromJson
+  name: FromJson
+  nameWithType: JSON.FromJson
+  fullName: GanaSDK.XmlAdapter.JSON.FromJson
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
