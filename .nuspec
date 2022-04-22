@@ -3,14 +3,14 @@
 	<metadata>
 		<!-- Required elements-->
 		<id>GanaSDK</id>
-		<version>1.0.0.1</version>
+		<version>1.0.1</version>
 		<authors>Pedro Caricari</authors>
 		<copyright>Copyright © HP Inc. 2022</copyright>
 		<description>SDK Tools For BG Development</description>
 		<!-- Optional elements -->
 		<title>GanaSDK</title>
 		<summary>BG SDK Tools</summary>
-		<icon>GanaIcon.png</icon>
+		<icon>assets/GanaIcon.png</icon>
 		<owners>Banco Ganadero S.A.</owners>
 		<projectUrl>https://github.com/cartory/GanaSDK</projectUrl>
 
@@ -24,11 +24,8 @@
 		<dependencies>
 			<dependency id="Oracle.ManagedDataAccess" version="19.14.0" />
 		</dependencies>
-		<frameworkAssemblies>
-			<frameworkAssembly assemblyName=".NetFramework4.5"  />
-		</frameworkAssemblies>
 	</metadata>
 	<files>
-		<file src="GanaIcon.png" target="GanaIcon.png" />
+		<file src="assets/GanaIcon.png" target="assets/GanaIcon.png" />
 	</files>
 </package>
