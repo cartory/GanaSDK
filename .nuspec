@@ -22,7 +22,7 @@
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<tags>SDK,SDK Tools</tags>
 		<dependencies>
-			<dependency id="Oracle.ManagedDataAccess" version="19.14.0" />
+			<dependency id="Newtonsoft.Json" version="13.0.1" />
 		</dependencies>
 	</metadata>
 	<files>
