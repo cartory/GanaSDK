@@ -26,6 +26,15 @@ references:
   isSpec: "True"
   fullName: GanaSDK.DBConnection.Instance
   nameWithType: DBConnection.Instance
+- uid: GanaSDK.DBConnection.NonQuery(System.Func{System.Data.OracleClient.OracleCommand,System.Int32})
+  name: NonQuery(Func<OracleCommand, Int32>)
+  href: api/GanaSDK.DBConnection.html#GanaSDK_DBConnection_NonQuery_System_Func_System_Data_OracleClient_OracleCommand_System_Int32__
+  commentId: M:GanaSDK.DBConnection.NonQuery(System.Func{System.Data.OracleClient.OracleCommand,System.Int32})
+  name.vb: NonQuery(Func(Of OracleCommand, Int32))
+  fullName: GanaSDK.DBConnection.NonQuery(System.Func<System.Data.OracleClient.OracleCommand, System.Int32>)
+  fullName.vb: GanaSDK.DBConnection.NonQuery(System.Func(Of System.Data.OracleClient.OracleCommand, System.Int32))
+  nameWithType: DBConnection.NonQuery(Func<OracleCommand, Int32>)
+  nameWithType.vb: DBConnection.NonQuery(Func(Of OracleCommand, Int32))
 - uid: GanaSDK.DBConnection.NonQuery(System.String)
   name: NonQuery(String)
   href: api/GanaSDK.DBConnection.html#GanaSDK_DBConnection_NonQuery_System_String_
@@ -39,13 +48,13 @@ references:
   isSpec: "True"
   fullName: GanaSDK.DBConnection.NonQuery
   nameWithType: DBConnection.NonQuery
-- uid: GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+- uid: GanaSDK.DBConnection.Query(System.Action{System.Data.OracleClient.OracleCommand})
   name: Query(Action<OracleCommand>)
-  href: api/GanaSDK.DBConnection.html#GanaSDK_DBConnection_Query_System_Action_Oracle_ManagedDataAccess_Client_OracleCommand__
-  commentId: M:GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+  href: api/GanaSDK.DBConnection.html#GanaSDK_DBConnection_Query_System_Action_System_Data_OracleClient_OracleCommand__
+  commentId: M:GanaSDK.DBConnection.Query(System.Action{System.Data.OracleClient.OracleCommand})
   name.vb: Query(Action(Of OracleCommand))
-  fullName: GanaSDK.DBConnection.Query(System.Action<Oracle.ManagedDataAccess.Client.OracleCommand>)
-  fullName.vb: GanaSDK.DBConnection.Query(System.Action(Of Oracle.ManagedDataAccess.Client.OracleCommand))
+  fullName: GanaSDK.DBConnection.Query(System.Action<System.Data.OracleClient.OracleCommand>)
+  fullName.vb: GanaSDK.DBConnection.Query(System.Action(Of System.Data.OracleClient.OracleCommand))
   nameWithType: DBConnection.Query(Action<OracleCommand>)
   nameWithType.vb: DBConnection.Query(Action(Of OracleCommand))
 - uid: GanaSDK.DBConnection.Query(System.String)
@@ -61,13 +70,13 @@ references:
   isSpec: "True"
   fullName: GanaSDK.DBConnection.Query
   nameWithType: DBConnection.Query
-- uid: GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+- uid: GanaSDK.DBConnection.Query``1(System.Func{System.Data.OracleClient.OracleCommand,``0})
   name: Query<T>(Func<OracleCommand, T>)
-  href: api/GanaSDK.DBConnection.html#GanaSDK_DBConnection_Query__1_System_Func_Oracle_ManagedDataAccess_Client_OracleCommand___0__
-  commentId: M:GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+  href: api/GanaSDK.DBConnection.html#GanaSDK_DBConnection_Query__1_System_Func_System_Data_OracleClient_OracleCommand___0__
+  commentId: M:GanaSDK.DBConnection.Query``1(System.Func{System.Data.OracleClient.OracleCommand,``0})
   name.vb: Query(Of T)(Func(Of OracleCommand, T))
-  fullName: GanaSDK.DBConnection.Query<T>(System.Func<Oracle.ManagedDataAccess.Client.OracleCommand, T>)
-  fullName.vb: GanaSDK.DBConnection.Query(Of T)(System.Func(Of Oracle.ManagedDataAccess.Client.OracleCommand, T))
+  fullName: GanaSDK.DBConnection.Query<T>(System.Func<System.Data.OracleClient.OracleCommand, T>)
+  fullName.vb: GanaSDK.DBConnection.Query(Of T)(System.Func(Of System.Data.OracleClient.OracleCommand, T))
   nameWithType: DBConnection.Query<T>(Func<OracleCommand, T>)
   nameWithType.vb: DBConnection.Query(Of T)(Func(Of OracleCommand, T))
 - uid: GanaSDK.DBConnection.SetConnectionString(System.String)
@@ -157,12 +166,6 @@ references:
   isSpec: "True"
   fullName: GanaSDK.XmlAdapter.JSON.ToJson
   nameWithType: JSON.ToJson
-- uid: GanaSDK.XmlAdapter.RequestOptions
-  name: RequestOptions
-  href: api/GanaSDK.XmlAdapter.RequestOptions.html
-  commentId: T:GanaSDK.XmlAdapter.RequestOptions
-  fullName: GanaSDK.XmlAdapter.RequestOptions
-  nameWithType: RequestOptions
 - uid: GanaSDK.XmlAdapter.RestRequest
   name: RestRequest
   href: api/GanaSDK.XmlAdapter.RestRequest.html
@@ -185,6 +188,28 @@ references:
   isSpec: "True"
   fullName: GanaSDK.XmlAdapter.RestRequest.RestRequest
   nameWithType: RestRequest.RestRequest
+- uid: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object)
+  name: Validate(Object)
+  href: api/GanaSDK.XmlAdapter.RestRequest.html#GanaSDK_XmlAdapter_RestRequest_Validate_System_Object_
+  commentId: M:GanaSDK.XmlAdapter.RestRequest.Validate(System.Object)
+  fullName: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object)
+  nameWithType: RestRequest.Validate(Object)
+- uid: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object,System.String[])
+  name: Validate(Object, String[])
+  href: api/GanaSDK.XmlAdapter.RestRequest.html#GanaSDK_XmlAdapter_RestRequest_Validate_System_Object_System_String___
+  commentId: M:GanaSDK.XmlAdapter.RestRequest.Validate(System.Object,System.String[])
+  name.vb: Validate(Object, String())
+  fullName: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object, System.String[])
+  fullName.vb: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object, System.String())
+  nameWithType: RestRequest.Validate(Object, String[])
+  nameWithType.vb: RestRequest.Validate(Object, String())
+- uid: GanaSDK.XmlAdapter.RestRequest.Validate*
+  name: Validate
+  href: api/GanaSDK.XmlAdapter.RestRequest.html#GanaSDK_XmlAdapter_RestRequest_Validate_
+  commentId: Overload:GanaSDK.XmlAdapter.RestRequest.Validate
+  isSpec: "True"
+  fullName: GanaSDK.XmlAdapter.RestRequest.Validate
+  nameWithType: RestRequest.Validate
 - uid: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate(System.Object)
   name: ValidateAndCreate(Object)
   href: api/GanaSDK.XmlAdapter.RestRequest.html#GanaSDK_XmlAdapter_RestRequest_ValidateAndCreate_System_Object_
@@ -241,42 +266,24 @@ references:
   commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.Headers
   fullName: GanaSDK.XmlAdapter.RestRequestOptions.Headers
   nameWithType: RestRequestOptions.Headers
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.JsonParser
-  name: JsonParser
-  href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_JsonParser
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.JsonParser
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.JsonParser
-  nameWithType: RestRequestOptions.JsonParser
 - uid: GanaSDK.XmlAdapter.RestRequestOptions.Method
   name: Method
   href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_Method
   commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.Method
   fullName: GanaSDK.XmlAdapter.RestRequestOptions.Method
   nameWithType: RestRequestOptions.Method
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.SrvFormat
-  name: SrvFormat
-  href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_SrvFormat
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.SrvFormat
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.SrvFormat
-  nameWithType: RestRequestOptions.SrvFormat
+- uid: GanaSDK.XmlAdapter.RestRequestOptions.Result
+  name: Result
+  href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_Result
+  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.Result
+  fullName: GanaSDK.XmlAdapter.RestRequestOptions.Result
+  nameWithType: RestRequestOptions.Result
 - uid: GanaSDK.XmlAdapter.RestRequestOptions.Timeout
   name: Timeout
   href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_Timeout
   commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.Timeout
   fullName: GanaSDK.XmlAdapter.RestRequestOptions.Timeout
   nameWithType: RestRequestOptions.Timeout
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.URL
-  name: URL
-  href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_URL
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.URL
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.URL
-  nameWithType: RestRequestOptions.URL
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.UserAgent
-  name: UserAgent
-  href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_UserAgent
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.UserAgent
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.UserAgent
-  nameWithType: RestRequestOptions.UserAgent
 - uid: GanaSDK.XmlAdapter.RestRequestOptions.XmlTag
   name: XmlTag
   href: api/GanaSDK.XmlAdapter.RestRequestOptions.html#GanaSDK_XmlAdapter_RestRequestOptions_XmlTag
@@ -289,50 +296,44 @@ references:
   commentId: T:GanaSDK.XmlAdapter.RestResponse
   fullName: GanaSDK.XmlAdapter.RestResponse
   nameWithType: RestResponse
-- uid: GanaSDK.XmlAdapter.RestResponse.DefaultSRV(System.String,System.String)
-  name: DefaultSRV(String, String)
-  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_DefaultSRV_System_String_System_String_
-  commentId: M:GanaSDK.XmlAdapter.RestResponse.DefaultSRV(System.String,System.String)
-  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultSRV(System.String, System.String)
-  nameWithType: RestResponse.DefaultSRV(String, String)
-- uid: GanaSDK.XmlAdapter.RestResponse.DefaultSRV*
-  name: DefaultSRV
-  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_DefaultSRV_
-  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.DefaultSRV
+- uid: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String)
+  name: DefaultResult(String)
+  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_DefaultResult_System_String_
+  commentId: M:GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String)
+  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String)
+  nameWithType: RestResponse.DefaultResult(String)
+- uid: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String,System.String)
+  name: DefaultResult(String, String)
+  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_DefaultResult_System_String_System_String_
+  commentId: M:GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String,System.String)
+  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String, System.String)
+  nameWithType: RestResponse.DefaultResult(String, String)
+- uid: GanaSDK.XmlAdapter.RestResponse.DefaultResult*
+  name: DefaultResult
+  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_DefaultResult_
+  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.DefaultResult
   isSpec: "True"
-  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultSRV
-  nameWithType: RestResponse.DefaultSRV
-- uid: GanaSDK.XmlAdapter.RestResponse.ToSRV
-  name: ToSRV()
-  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_ToSRV
-  commentId: M:GanaSDK.XmlAdapter.RestResponse.ToSRV
-  fullName: GanaSDK.XmlAdapter.RestResponse.ToSRV()
-  nameWithType: RestResponse.ToSRV()
-- uid: GanaSDK.XmlAdapter.RestResponse.ToSRV(System.String)
-  name: ToSRV(String)
-  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_ToSRV_System_String_
-  commentId: M:GanaSDK.XmlAdapter.RestResponse.ToSRV(System.String)
-  fullName: GanaSDK.XmlAdapter.RestResponse.ToSRV(System.String)
-  nameWithType: RestResponse.ToSRV(String)
-- uid: GanaSDK.XmlAdapter.RestResponse.ToSRV*
-  name: ToSRV
-  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_ToSRV_
-  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.ToSRV
+  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultResult
+  nameWithType: RestResponse.DefaultResult
+- uid: GanaSDK.XmlAdapter.RestResponse.Result
+  name: Result()
+  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_Result
+  commentId: M:GanaSDK.XmlAdapter.RestResponse.Result
+  fullName: GanaSDK.XmlAdapter.RestResponse.Result()
+  nameWithType: RestResponse.Result()
+- uid: GanaSDK.XmlAdapter.RestResponse.Result*
+  name: Result
+  href: api/GanaSDK.XmlAdapter.RestResponse.html#GanaSDK_XmlAdapter_RestResponse_Result_
+  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.Result
   isSpec: "True"
-  fullName: GanaSDK.XmlAdapter.RestResponse.ToSRV
-  nameWithType: RestResponse.ToSRV
+  fullName: GanaSDK.XmlAdapter.RestResponse.Result
+  nameWithType: RestResponse.Result
 - uid: GanaSDK.XmlAdapter.RestXmlAdapter
   name: RestXmlAdapter
   href: api/GanaSDK.XmlAdapter.RestXmlAdapter.html
   commentId: T:GanaSDK.XmlAdapter.RestXmlAdapter
   fullName: GanaSDK.XmlAdapter.RestXmlAdapter
   nameWithType: RestXmlAdapter
-- uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  name: Fetch(RequestOptions)
-  href: api/GanaSDK.XmlAdapter.RestXmlAdapter.html#GanaSDK_XmlAdapter_RestXmlAdapter_Fetch_GanaSDK_XmlAdapter_RequestOptions_
-  commentId: M:GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  fullName: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  nameWithType: RestXmlAdapter.Fetch(RequestOptions)
 - uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
   name: Fetch(String, RestRequestOptions)
   href: api/GanaSDK.XmlAdapter.RestXmlAdapter.html#GanaSDK_XmlAdapter_RestXmlAdapter_Fetch_System_String_GanaSDK_XmlAdapter_RestRequestOptions_
@@ -352,25 +353,21 @@ references:
   commentId: T:GanaSDK.XmlAdapter.XmlAdapter
   fullName: GanaSDK.XmlAdapter.XmlAdapter
   nameWithType: XmlAdapter
-- uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  name: Fetch(RequestOptions)
-  href: api/GanaSDK.XmlAdapter.XmlAdapter.html#GanaSDK_XmlAdapter_XmlAdapter_Fetch_GanaSDK_XmlAdapter_RequestOptions_
-  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  nameWithType: XmlAdapter.Fetch(RequestOptions)
-- uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch*
-  name: Fetch
-  href: api/GanaSDK.XmlAdapter.XmlAdapter.html#GanaSDK_XmlAdapter_XmlAdapter_Fetch_
-  commentId: Overload:GanaSDK.XmlAdapter.XmlAdapter.Fetch
-  isSpec: "True"
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch
-  nameWithType: XmlAdapter.Fetch
-- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
-  name: ToXml(String, String)
-  href: api/GanaSDK.XmlAdapter.XmlAdapter.html#GanaSDK_XmlAdapter_XmlAdapter_ToXml_System_String_System_String_
-  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.String)
-  nameWithType: XmlAdapter.ToXml(String, String)
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  name: ToXml(String, Dictionary<String, String>)
+  href: api/GanaSDK.XmlAdapter.XmlAdapter.html#GanaSDK_XmlAdapter_XmlAdapter_ToXml_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  name.vb: ToXml(String, Dictionary(Of String, String))
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  nameWithType: XmlAdapter.ToXml(String, Dictionary<String, String>)
+  nameWithType.vb: XmlAdapter.ToXml(String, Dictionary(Of String, String))
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
+  name: ToXml(String, Object)
+  href: api/GanaSDK.XmlAdapter.XmlAdapter.html#GanaSDK_XmlAdapter_XmlAdapter_ToXml_System_String_System_Object_
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Object)
+  nameWithType: XmlAdapter.ToXml(String, Object)
 - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml*
   name: ToXml
   href: api/GanaSDK.XmlAdapter.XmlAdapter.html#GanaSDK_XmlAdapter_XmlAdapter_ToXml_

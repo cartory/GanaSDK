@@ -6,10 +6,11 @@ items:
   parent: GanaSDK
   children:
   - GanaSDK.DBConnection.Instance
+  - GanaSDK.DBConnection.NonQuery(System.Func{System.Data.OracleClient.OracleCommand,System.Int32})
   - GanaSDK.DBConnection.NonQuery(System.String)
-  - GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+  - GanaSDK.DBConnection.Query(System.Action{System.Data.OracleClient.OracleCommand})
   - GanaSDK.DBConnection.Query(System.String)
-  - GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+  - GanaSDK.DBConnection.Query``1(System.Func{System.Data.OracleClient.OracleCommand,``0})
   - GanaSDK.DBConnection.SetConnectionString(System.String)
   langs:
   - csharp
@@ -103,33 +104,43 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: SetConnectionString
     path: core/DBConnection.cs
-    startLine: 33
+    startLine: 21
   assemblies:
   - GanaSDK
   namespace: GanaSDK
   syntax:
-    content: public DBConnection SetConnectionString(string connectionString)
+    content: >-
+      [Obsolete]
+
+      public DBConnection SetConnectionString(string connectionString)
     parameters:
     - id: connectionString
       type: System.String
     return:
       type: GanaSDK.DBConnection
-    content.vb: Public Function SetConnectionString(connectionString As String) As DBConnection
+    content.vb: >-
+      <Obsolete>
+
+      Public Function SetConnectionString(connectionString As String) As DBConnection
   overload: GanaSDK.DBConnection.SetConnectionString*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
-  commentId: M:GanaSDK.DBConnection.Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
-  id: Query``1(System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0})
+- uid: GanaSDK.DBConnection.Query``1(System.Func{System.Data.OracleClient.OracleCommand,``0})
+  commentId: M:GanaSDK.DBConnection.Query``1(System.Func{System.Data.OracleClient.OracleCommand,``0})
+  id: Query``1(System.Func{System.Data.OracleClient.OracleCommand,``0})
   parent: GanaSDK.DBConnection
   langs:
   - csharp
   - vb
   name: Query<T>(Func<OracleCommand, T>)
   nameWithType: DBConnection.Query<T>(Func<OracleCommand, T>)
-  fullName: GanaSDK.DBConnection.Query<T>(System.Func<Oracle.ManagedDataAccess.Client.OracleCommand, T>)
+  fullName: GanaSDK.DBConnection.Query<T>(System.Func<System.Data.OracleClient.OracleCommand, T>)
   type: Method
   source:
     remote:
@@ -138,38 +149,48 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Query
     path: core/DBConnection.cs
-    startLine: 78
+    startLine: 66
   assemblies:
   - GanaSDK
   namespace: GanaSDK
   syntax:
-    content: public T Query<T>(Func<OracleCommand, T> callback)
+    content: >-
+      [Obsolete]
+
+      public T Query<T>(Func<OracleCommand, T> callback)
     parameters:
     - id: callback
-      type: System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,{T}}
+      type: System.Func{System.Data.OracleClient.OracleCommand,{T}}
     typeParameters:
     - id: T
     return:
       type: '{T}'
-    content.vb: Public Function Query(Of T)(callback As Func(Of OracleCommand, T)) As T
+    content.vb: >-
+      <Obsolete>
+
+      Public Function Query(Of T)(callback As Func(Of OracleCommand, T)) As T
   overload: GanaSDK.DBConnection.Query*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
   nameWithType.vb: DBConnection.Query(Of T)(Func(Of OracleCommand, T))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: GanaSDK.DBConnection.Query(Of T)(System.Func(Of Oracle.ManagedDataAccess.Client.OracleCommand, T))
+  fullName.vb: GanaSDK.DBConnection.Query(Of T)(System.Func(Of System.Data.OracleClient.OracleCommand, T))
   name.vb: Query(Of T)(Func(Of OracleCommand, T))
-- uid: GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
-  commentId: M:GanaSDK.DBConnection.Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
-  id: Query(System.Action{Oracle.ManagedDataAccess.Client.OracleCommand})
+- uid: GanaSDK.DBConnection.Query(System.Action{System.Data.OracleClient.OracleCommand})
+  commentId: M:GanaSDK.DBConnection.Query(System.Action{System.Data.OracleClient.OracleCommand})
+  id: Query(System.Action{System.Data.OracleClient.OracleCommand})
   parent: GanaSDK.DBConnection
   langs:
   - csharp
   - vb
   name: Query(Action<OracleCommand>)
   nameWithType: DBConnection.Query(Action<OracleCommand>)
-  fullName: GanaSDK.DBConnection.Query(System.Action<Oracle.ManagedDataAccess.Client.OracleCommand>)
+  fullName: GanaSDK.DBConnection.Query(System.Action<System.Data.OracleClient.OracleCommand>)
   type: Method
   source:
     remote:
@@ -178,24 +199,82 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Query
     path: core/DBConnection.cs
-    startLine: 98
+    startLine: 87
   assemblies:
   - GanaSDK
   namespace: GanaSDK
   syntax:
-    content: public void Query(Action<OracleCommand> callback)
+    content: >-
+      [Obsolete]
+
+      public void Query(Action<OracleCommand> callback)
     parameters:
     - id: callback
-      type: System.Action{Oracle.ManagedDataAccess.Client.OracleCommand}
-    content.vb: Public Sub Query(callback As Action(Of OracleCommand))
+      type: System.Action{System.Data.OracleClient.OracleCommand}
+    content.vb: >-
+      <Obsolete>
+
+      Public Sub Query(callback As Action(Of OracleCommand))
   overload: GanaSDK.DBConnection.Query*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
   nameWithType.vb: DBConnection.Query(Action(Of OracleCommand))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: GanaSDK.DBConnection.Query(System.Action(Of Oracle.ManagedDataAccess.Client.OracleCommand))
+  fullName.vb: GanaSDK.DBConnection.Query(System.Action(Of System.Data.OracleClient.OracleCommand))
   name.vb: Query(Action(Of OracleCommand))
+- uid: GanaSDK.DBConnection.NonQuery(System.Func{System.Data.OracleClient.OracleCommand,System.Int32})
+  commentId: M:GanaSDK.DBConnection.NonQuery(System.Func{System.Data.OracleClient.OracleCommand,System.Int32})
+  id: NonQuery(System.Func{System.Data.OracleClient.OracleCommand,System.Int32})
+  parent: GanaSDK.DBConnection
+  langs:
+  - csharp
+  - vb
+  name: NonQuery(Func<OracleCommand, Int32>)
+  nameWithType: DBConnection.NonQuery(Func<OracleCommand, Int32>)
+  fullName: GanaSDK.DBConnection.NonQuery(System.Func<System.Data.OracleClient.OracleCommand, System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: core/DBConnection.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: NonQuery
+    path: core/DBConnection.cs
+    startLine: 97
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK
+  syntax:
+    content: >-
+      [Obsolete]
+
+      public int NonQuery(Func<OracleCommand, int> callback)
+    parameters:
+    - id: callback
+      type: System.Func{System.Data.OracleClient.OracleCommand,System.Int32}
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Obsolete>
+
+      Public Function NonQuery(callback As Func(Of OracleCommand, Integer)) As Integer
+  overload: GanaSDK.DBConnection.NonQuery*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
+  nameWithType.vb: DBConnection.NonQuery(Func(Of OracleCommand, Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GanaSDK.DBConnection.NonQuery(System.Func(Of System.Data.OracleClient.OracleCommand, System.Int32))
+  name.vb: NonQuery(Func(Of OracleCommand, Int32))
 - uid: GanaSDK.DBConnection.NonQuery(System.String)
   commentId: M:GanaSDK.DBConnection.NonQuery(System.String)
   id: NonQuery(System.String)
@@ -214,19 +293,29 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: NonQuery
     path: core/DBConnection.cs
-    startLine: 107
+    startLine: 119
   assemblies:
   - GanaSDK
   namespace: GanaSDK
   syntax:
-    content: public int NonQuery(string sql)
+    content: >-
+      [Obsolete]
+
+      public int NonQuery(string sql)
     parameters:
     - id: sql
       type: System.String
     return:
       type: System.Int32
-    content.vb: Public Function NonQuery(sql As String) As Integer
+    content.vb: >-
+      <Obsolete>
+
+      Public Function NonQuery(sql As String) As Integer
   overload: GanaSDK.DBConnection.NonQuery*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -249,19 +338,29 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Query
     path: core/DBConnection.cs
-    startLine: 130
+    startLine: 131
   assemblies:
   - GanaSDK
   namespace: GanaSDK
   syntax:
-    content: public Dictionary<string, object>[] Query(string sql)
+    content: >-
+      [Obsolete]
+
+      public Dictionary<string, object>[] Query(string sql)
     parameters:
     - id: sql
       type: System.String
     return:
       type: System.Collections.Generic.Dictionary{System.String,System.Object}[]
-    content.vb: Public Function Query(sql As String) As Dictionary(Of String, Object)()
+    content.vb: >-
+      <Obsolete>
+
+      Public Function Query(sql As String) As Dictionary(Of String, Object)()
   overload: GanaSDK.DBConnection.Query*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -592,15 +691,15 @@ references:
   name: Query
   nameWithType: DBConnection.Query
   fullName: GanaSDK.DBConnection.Query
-- uid: System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,{T}}
-  commentId: T:System.Func{Oracle.ManagedDataAccess.Client.OracleCommand,``0}
+- uid: System.Func{System.Data.OracleClient.OracleCommand,{T}}
+  commentId: T:System.Func{System.Data.OracleClient.OracleCommand,``0}
   parent: System
   definition: System.Func`2
   name: Func<OracleCommand, T>
   nameWithType: Func<OracleCommand, T>
-  fullName: System.Func<Oracle.ManagedDataAccess.Client.OracleCommand, T>
+  fullName: System.Func<System.Data.OracleClient.OracleCommand, T>
   nameWithType.vb: Func(Of OracleCommand, T)
-  fullName.vb: System.Func(Of Oracle.ManagedDataAccess.Client.OracleCommand, T)
+  fullName.vb: System.Func(Of System.Data.OracleClient.OracleCommand, T)
   name.vb: Func(Of OracleCommand, T)
   spec.csharp:
   - uid: System.Func`2
@@ -611,10 +710,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+  - uid: System.Data.OracleClient.OracleCommand
     name: OracleCommand
     nameWithType: OracleCommand
-    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    fullName: System.Data.OracleClient.OracleCommand
     isExternal: true
   - name: ', '
     nameWithType: ', '
@@ -634,10 +733,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+  - uid: System.Data.OracleClient.OracleCommand
     name: OracleCommand
     nameWithType: OracleCommand
-    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    fullName: System.Data.OracleClient.OracleCommand
     isExternal: true
   - name: ', '
     nameWithType: ', '
@@ -709,15 +808,15 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: System.Action{Oracle.ManagedDataAccess.Client.OracleCommand}
-  commentId: T:System.Action{Oracle.ManagedDataAccess.Client.OracleCommand}
+- uid: System.Action{System.Data.OracleClient.OracleCommand}
+  commentId: T:System.Action{System.Data.OracleClient.OracleCommand}
   parent: System
   definition: System.Action`1
   name: Action<OracleCommand>
   nameWithType: Action<OracleCommand>
-  fullName: System.Action<Oracle.ManagedDataAccess.Client.OracleCommand>
+  fullName: System.Action<System.Data.OracleClient.OracleCommand>
   nameWithType.vb: Action(Of OracleCommand)
-  fullName.vb: System.Action(Of Oracle.ManagedDataAccess.Client.OracleCommand)
+  fullName.vb: System.Action(Of System.Data.OracleClient.OracleCommand)
   name.vb: Action(Of OracleCommand)
   spec.csharp:
   - uid: System.Action`1
@@ -728,10 +827,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+  - uid: System.Data.OracleClient.OracleCommand
     name: OracleCommand
     nameWithType: OracleCommand
-    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    fullName: System.Data.OracleClient.OracleCommand
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -745,10 +844,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Oracle.ManagedDataAccess.Client.OracleCommand
+  - uid: System.Data.OracleClient.OracleCommand
     name: OracleCommand
     nameWithType: OracleCommand
-    fullName: Oracle.ManagedDataAccess.Client.OracleCommand
+    fullName: System.Data.OracleClient.OracleCommand
     isExternal: true
   - name: )
     nameWithType: )
@@ -797,6 +896,66 @@ references:
   name: NonQuery
   nameWithType: DBConnection.NonQuery
   fullName: GanaSDK.DBConnection.NonQuery
+- uid: System.Func{System.Data.OracleClient.OracleCommand,System.Int32}
+  commentId: T:System.Func{System.Data.OracleClient.OracleCommand,System.Int32}
+  parent: System
+  definition: System.Func`2
+  name: Func<OracleCommand, Int32>
+  nameWithType: Func<OracleCommand, Int32>
+  fullName: System.Func<System.Data.OracleClient.OracleCommand, System.Int32>
+  nameWithType.vb: Func(Of OracleCommand, Int32)
+  fullName.vb: System.Func(Of System.Data.OracleClient.OracleCommand, System.Int32)
+  name.vb: Func(Of OracleCommand, Int32)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Data.OracleClient.OracleCommand
+    name: OracleCommand
+    nameWithType: OracleCommand
+    fullName: System.Data.OracleClient.OracleCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Data.OracleClient.OracleCommand
+    name: OracleCommand
+    nameWithType: OracleCommand
+    fullName: System.Data.OracleClient.OracleCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

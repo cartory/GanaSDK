@@ -6,7 +6,6 @@ items:
   children:
   - GanaSDK.XmlAdapter.CodeRes
   - GanaSDK.XmlAdapter.JSON
-  - GanaSDK.XmlAdapter.RequestOptions
   - GanaSDK.XmlAdapter.RestRequest
   - GanaSDK.XmlAdapter.RestRequestOptions
   - GanaSDK.XmlAdapter.RestResponse
@@ -54,12 +53,6 @@ references:
   name: RestXmlAdapter
   nameWithType: RestXmlAdapter
   fullName: GanaSDK.XmlAdapter.RestXmlAdapter
-- uid: GanaSDK.XmlAdapter.RequestOptions
-  commentId: T:GanaSDK.XmlAdapter.RequestOptions
-  parent: GanaSDK.XmlAdapter
-  name: RequestOptions
-  nameWithType: RequestOptions
-  fullName: GanaSDK.XmlAdapter.RequestOptions
 - uid: GanaSDK.XmlAdapter.XmlAdapter
   commentId: T:GanaSDK.XmlAdapter.XmlAdapter
   parent: GanaSDK.XmlAdapter

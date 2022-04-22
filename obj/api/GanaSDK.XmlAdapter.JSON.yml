@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: core/XmlAdapter/Json.cs
+      path: core/XmlAdapter/JSON.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
     id: JSON
-    path: core/XmlAdapter/Json.cs
+    path: core/XmlAdapter/JSON.cs
     startLine: 9
   assemblies:
   - GanaSDK
@@ -64,11 +64,11 @@ items:
   type: Method
   source:
     remote:
-      path: core/XmlAdapter/Json.cs
+      path: core/XmlAdapter/JSON.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
     id: ToJson
-    path: core/XmlAdapter/Json.cs
+    path: core/XmlAdapter/JSON.cs
     startLine: 11
   assemblies:
   - GanaSDK
@@ -98,11 +98,11 @@ items:
   type: Method
   source:
     remote:
-      path: core/XmlAdapter/Json.cs
+      path: core/XmlAdapter/JSON.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
     id: ToJson
-    path: core/XmlAdapter/Json.cs
+    path: core/XmlAdapter/JSON.cs
     startLine: 12
   assemblies:
   - GanaSDK
@@ -135,11 +135,11 @@ items:
   type: Method
   source:
     remote:
-      path: core/XmlAdapter/Json.cs
+      path: core/XmlAdapter/JSON.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
     id: FromJson
-    path: core/XmlAdapter/Json.cs
+    path: core/XmlAdapter/JSON.cs
     startLine: 14
   assemblies:
   - GanaSDK
@@ -177,11 +177,11 @@ items:
   type: Method
   source:
     remote:
-      path: core/XmlAdapter/Json.cs
+      path: core/XmlAdapter/JSON.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
     id: FromJson
-    path: core/XmlAdapter/Json.cs
+    path: core/XmlAdapter/JSON.cs
     startLine: 15
   assemblies:
   - GanaSDK

@@ -11,8 +11,6 @@
     name: CodeRes
   - uid: GanaSDK.XmlAdapter.JSON
     name: JSON
-  - uid: GanaSDK.XmlAdapter.RequestOptions
-    name: RequestOptions
   - uid: GanaSDK.XmlAdapter.RestRequest
     name: RestRequest
   - uid: GanaSDK.XmlAdapter.RestRequestOptions

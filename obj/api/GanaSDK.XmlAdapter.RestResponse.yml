@@ -5,9 +5,9 @@ items:
   id: RestResponse
   parent: GanaSDK.XmlAdapter
   children:
-  - GanaSDK.XmlAdapter.RestResponse.DefaultSRV(System.String,System.String)
-  - GanaSDK.XmlAdapter.RestResponse.ToSRV
-  - GanaSDK.XmlAdapter.RestResponse.ToSRV(System.String)
+  - GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String)
+  - GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String,System.String)
+  - GanaSDK.XmlAdapter.RestResponse.Result
   langs:
   - csharp
   - vb
@@ -54,110 +54,110 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: GanaSDK.XmlAdapter.RestResponse.ToSRV
-  commentId: M:GanaSDK.XmlAdapter.RestResponse.ToSRV
-  id: ToSRV
+- uid: GanaSDK.XmlAdapter.RestResponse.Result
+  commentId: M:GanaSDK.XmlAdapter.RestResponse.Result
+  id: Result
   parent: GanaSDK.XmlAdapter.RestResponse
   langs:
   - csharp
   - vb
-  name: ToSRV()
-  nameWithType: RestResponse.ToSRV()
-  fullName: GanaSDK.XmlAdapter.RestResponse.ToSRV()
+  name: Result()
+  nameWithType: RestResponse.Result()
+  fullName: GanaSDK.XmlAdapter.RestResponse.Result()
   type: Method
   source:
     remote:
       path: core/XmlAdapter/RestResponse.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
-    id: ToSRV
+    id: Result
     path: core/XmlAdapter/RestResponse.cs
     startLine: 19
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
   syntax:
-    content: public abstract string ToSRV()
+    content: public virtual object Result()
     return:
-      type: System.String
-    content.vb: Public MustOverride Function ToSRV As String
-  overload: GanaSDK.XmlAdapter.RestResponse.ToSRV*
-  modifiers.csharp:
-  - public
-  - abstract
-  modifiers.vb:
-  - Public
-  - MustOverride
-- uid: GanaSDK.XmlAdapter.RestResponse.ToSRV(System.String)
-  commentId: M:GanaSDK.XmlAdapter.RestResponse.ToSRV(System.String)
-  id: ToSRV(System.String)
-  parent: GanaSDK.XmlAdapter.RestResponse
-  langs:
-  - csharp
-  - vb
-  name: ToSRV(String)
-  nameWithType: RestResponse.ToSRV(String)
-  fullName: GanaSDK.XmlAdapter.RestResponse.ToSRV(System.String)
-  type: Method
-  source:
-    remote:
-      path: core/XmlAdapter/RestResponse.cs
-      branch: master
-      repo: https://github.com/cartory/GanaSDK.git
-    id: ToSRV
-    path: core/XmlAdapter/RestResponse.cs
-    startLine: 20
-  assemblies:
-  - GanaSDK
-  namespace: GanaSDK.XmlAdapter
-  syntax:
-    content: public virtual string ToSRV(string errMsg)
-    parameters:
-    - id: errMsg
-      type: System.String
-    return:
-      type: System.String
-    content.vb: Public Overridable Function ToSRV(errMsg As String) As String
-  overload: GanaSDK.XmlAdapter.RestResponse.ToSRV*
+      type: System.Object
+    content.vb: Public Overridable Function Result As Object
+  overload: GanaSDK.XmlAdapter.RestResponse.Result*
   modifiers.csharp:
   - public
   - virtual
   modifiers.vb:
   - Public
   - Overridable
-- uid: GanaSDK.XmlAdapter.RestResponse.DefaultSRV(System.String,System.String)
-  commentId: M:GanaSDK.XmlAdapter.RestResponse.DefaultSRV(System.String,System.String)
-  id: DefaultSRV(System.String,System.String)
+- uid: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String)
+  commentId: M:GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String)
+  id: DefaultResult(System.String)
   parent: GanaSDK.XmlAdapter.RestResponse
   langs:
   - csharp
   - vb
-  name: DefaultSRV(String, String)
-  nameWithType: RestResponse.DefaultSRV(String, String)
-  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultSRV(System.String, System.String)
+  name: DefaultResult(String)
+  nameWithType: RestResponse.DefaultResult(String)
+  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String)
   type: Method
   source:
     remote:
       path: core/XmlAdapter/RestResponse.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
-    id: DefaultSRV
+    id: DefaultResult
     path: core/XmlAdapter/RestResponse.cs
-    startLine: 30
+    startLine: 21
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
   syntax:
-    content: public static string DefaultSRV(string code, string message = "")
+    content: public static object DefaultResult(string errMsg)
     parameters:
-    - id: code
-      type: System.String
-    - id: message
+    - id: errMsg
       type: System.String
     return:
+      type: System.Object
+    content.vb: Public Shared Function DefaultResult(errMsg As String) As Object
+  overload: GanaSDK.XmlAdapter.RestResponse.DefaultResult*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String,System.String)
+  commentId: M:GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String,System.String)
+  id: DefaultResult(System.String,System.String)
+  parent: GanaSDK.XmlAdapter.RestResponse
+  langs:
+  - csharp
+  - vb
+  name: DefaultResult(String, String)
+  nameWithType: RestResponse.DefaultResult(String, String)
+  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultResult(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/RestResponse.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: DefaultResult
+    path: core/XmlAdapter/RestResponse.cs
+    startLine: 27
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: public static object DefaultResult(string errCode, string errMsg)
+    parameters:
+    - id: errCode
       type: System.String
-    content.vb: Public Shared Function DefaultSRV(code As String, message As String = "") As String
-  overload: GanaSDK.XmlAdapter.RestResponse.DefaultSRV*
+    - id: errMsg
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Shared Function DefaultResult(errCode As String, errMsg As String) As Object
+  overload: GanaSDK.XmlAdapter.RestResponse.DefaultResult*
   modifiers.csharp:
   - public
   - static
@@ -635,11 +635,16 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: GanaSDK.XmlAdapter.RestResponse.ToSRV*
-  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.ToSRV
-  name: ToSRV
-  nameWithType: RestResponse.ToSRV
-  fullName: GanaSDK.XmlAdapter.RestResponse.ToSRV
+- uid: GanaSDK.XmlAdapter.RestResponse.Result*
+  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.Result
+  name: Result
+  nameWithType: RestResponse.Result
+  fullName: GanaSDK.XmlAdapter.RestResponse.Result
+- uid: GanaSDK.XmlAdapter.RestResponse.DefaultResult*
+  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.DefaultResult
+  name: DefaultResult
+  nameWithType: RestResponse.DefaultResult
+  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultResult
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -647,8 +652,3 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: GanaSDK.XmlAdapter.RestResponse.DefaultSRV*
-  commentId: Overload:GanaSDK.XmlAdapter.RestResponse.DefaultSRV
-  name: DefaultSRV
-  nameWithType: RestResponse.DefaultSRV
-  fullName: GanaSDK.XmlAdapter.RestResponse.DefaultSRV

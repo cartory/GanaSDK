@@ -1,0 +1,57 @@
+﻿
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="GanaSDK.html" name="" title="GanaSDK">GanaSDK</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="GanaSDK.DBConnection.html" name="" title="DBConnection">DBConnection</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="GanaSDK.XmlAdapter.html" name="" title="GanaSDK.XmlAdapter">GanaSDK.XmlAdapter</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="GanaSDK.XmlAdapter.CodeRes.html" name="" title="CodeRes">CodeRes</a>
+                          </li>
+                          <li>
+                              <a href="GanaSDK.XmlAdapter.JSON.html" name="" title="JSON">JSON</a>
+                          </li>
+                          <li>
+                              <a href="GanaSDK.XmlAdapter.RestRequest.html" name="" title="RestRequest">RestRequest</a>
+                          </li>
+                          <li>
+                              <a href="GanaSDK.XmlAdapter.RestRequestOptions.html" name="" title="RestRequestOptions">RestRequestOptions</a>
+                          </li>
+                          <li>
+                              <a href="GanaSDK.XmlAdapter.RestResponse.html" name="" title="RestResponse">RestResponse</a>
+                          </li>
+                          <li>
+                              <a href="GanaSDK.XmlAdapter.RestXmlAdapter.html" name="" title="RestXmlAdapter">RestXmlAdapter</a>
+                          </li>
+                          <li>
+                              <a href="GanaSDK.XmlAdapter.XmlAdapter.html" name="" title="XmlAdapter">XmlAdapter</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -10,12 +10,9 @@ items:
   - GanaSDK.XmlAdapter.RestRequestOptions.ContentType
   - GanaSDK.XmlAdapter.RestRequestOptions.DefaultOptions
   - GanaSDK.XmlAdapter.RestRequestOptions.Headers
-  - GanaSDK.XmlAdapter.RestRequestOptions.JsonParser
   - GanaSDK.XmlAdapter.RestRequestOptions.Method
-  - GanaSDK.XmlAdapter.RestRequestOptions.SrvFormat
+  - GanaSDK.XmlAdapter.RestRequestOptions.Result
   - GanaSDK.XmlAdapter.RestRequestOptions.Timeout
-  - GanaSDK.XmlAdapter.RestRequestOptions.URL
-  - GanaSDK.XmlAdapter.RestRequestOptions.UserAgent
   - GanaSDK.XmlAdapter.RestRequestOptions.XmlTag
   langs:
   - csharp
@@ -36,13 +33,10 @@ items:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
   syntax:
-    content: 'public class RestRequestOptions : RequestOptions'
-    content.vb: >-
-      Public Class RestRequestOptions
-          Inherits RequestOptions
+    content: public class RestRequestOptions
+    content.vb: Public Class RestRequestOptions
   inheritance:
   - System.Object
-  - GanaSDK.XmlAdapter.RequestOptions
   inheritedMembers:
   - System.Object.ToString
   - System.Object.Equals(System.Object)
@@ -125,68 +119,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.SrvFormat
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.SrvFormat
-  id: SrvFormat
-  parent: GanaSDK.XmlAdapter.RestRequestOptions
-  langs:
-  - csharp
-  - vb
-  name: SrvFormat
-  nameWithType: RestRequestOptions.SrvFormat
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.SrvFormat
-  type: Field
-  source:
-    remote:
-      path: core/XmlAdapter/RestXmlAdapter.cs
-      branch: master
-      repo: https://github.com/cartory/GanaSDK.git
-    id: SrvFormat
-    path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 20
-  assemblies:
-  - GanaSDK
-  namespace: GanaSDK.XmlAdapter
-  syntax:
-    content: public bool SrvFormat
-    return:
-      type: System.Boolean
-    content.vb: Public SrvFormat As Boolean
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.URL
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.URL
-  id: URL
-  parent: GanaSDK.XmlAdapter.RestRequestOptions
-  langs:
-  - csharp
-  - vb
-  name: URL
-  nameWithType: RestRequestOptions.URL
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.URL
-  type: Field
-  source:
-    remote:
-      path: core/XmlAdapter/RestXmlAdapter.cs
-      branch: master
-      repo: https://github.com/cartory/GanaSDK.git
-    id: URL
-    path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 22
-  assemblies:
-  - GanaSDK
-  namespace: GanaSDK.XmlAdapter
-  syntax:
-    content: public string URL
-    return:
-      type: System.String
-    content.vb: Public URL As String
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: GanaSDK.XmlAdapter.RestRequestOptions.Body
   commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.Body
   id: Body
@@ -205,7 +137,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Body
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 23
+    startLine: 21
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -236,7 +168,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Method
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 24
+    startLine: 22
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -267,7 +199,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: XmlTag
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 25
+    startLine: 23
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -298,7 +230,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Accept
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 26
+    startLine: 24
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -307,37 +239,6 @@ items:
     return:
       type: System.String
     content.vb: Public Accept As String
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.UserAgent
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.UserAgent
-  id: UserAgent
-  parent: GanaSDK.XmlAdapter.RestRequestOptions
-  langs:
-  - csharp
-  - vb
-  name: UserAgent
-  nameWithType: RestRequestOptions.UserAgent
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.UserAgent
-  type: Field
-  source:
-    remote:
-      path: core/XmlAdapter/RestXmlAdapter.cs
-      branch: master
-      repo: https://github.com/cartory/GanaSDK.git
-    id: UserAgent
-    path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 27
-  assemblies:
-  - GanaSDK
-  namespace: GanaSDK.XmlAdapter
-  syntax:
-    content: public string UserAgent
-    return:
-      type: System.String
-    content.vb: Public UserAgent As String
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -360,7 +261,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: ContentType
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 28
+    startLine: 25
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -373,33 +274,33 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: GanaSDK.XmlAdapter.RestRequestOptions.JsonParser
-  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.JsonParser
-  id: JsonParser
+- uid: GanaSDK.XmlAdapter.RestRequestOptions.Result
+  commentId: F:GanaSDK.XmlAdapter.RestRequestOptions.Result
+  id: Result
   parent: GanaSDK.XmlAdapter.RestRequestOptions
   langs:
   - csharp
   - vb
-  name: JsonParser
-  nameWithType: RestRequestOptions.JsonParser
-  fullName: GanaSDK.XmlAdapter.RestRequestOptions.JsonParser
+  name: Result
+  nameWithType: RestRequestOptions.Result
+  fullName: GanaSDK.XmlAdapter.RestRequestOptions.Result
   type: Field
   source:
     remote:
       path: core/XmlAdapter/RestXmlAdapter.cs
       branch: master
       repo: https://github.com/cartory/GanaSDK.git
-    id: JsonParser
+    id: Result
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 30
+    startLine: 27
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
   syntax:
-    content: public Func<string, RestResponse> JsonParser
+    content: public Func<string, object> Result
     return:
-      type: System.Func{System.String,GanaSDK.XmlAdapter.RestResponse}
-    content.vb: Public JsonParser As Func(Of String, RestResponse)
+      type: System.Func{System.String,System.Object}
+    content.vb: Public Result As Func(Of String, Object)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -422,7 +323,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Headers
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 31
+    startLine: 28
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -448,12 +349,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: GanaSDK.XmlAdapter.RequestOptions
-  commentId: T:GanaSDK.XmlAdapter.RequestOptions
-  parent: GanaSDK.XmlAdapter
-  name: RequestOptions
-  nameWithType: RequestOptions
-  fullName: GanaSDK.XmlAdapter.RequestOptions
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -757,13 +652,6 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -771,16 +659,16 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Func{System.String,GanaSDK.XmlAdapter.RestResponse}
-  commentId: T:System.Func{System.String,GanaSDK.XmlAdapter.RestResponse}
+- uid: System.Func{System.String,System.Object}
+  commentId: T:System.Func{System.String,System.Object}
   parent: System
   definition: System.Func`2
-  name: Func<String, RestResponse>
-  nameWithType: Func<String, RestResponse>
-  fullName: System.Func<System.String, GanaSDK.XmlAdapter.RestResponse>
-  nameWithType.vb: Func(Of String, RestResponse)
-  fullName.vb: System.Func(Of System.String, GanaSDK.XmlAdapter.RestResponse)
-  name.vb: Func(Of String, RestResponse)
+  name: Func<String, Object>
+  nameWithType: Func<String, Object>
+  fullName: System.Func<System.String, System.Object>
+  nameWithType.vb: Func(Of String, Object)
+  fullName.vb: System.Func(Of System.String, System.Object)
+  name.vb: Func(Of String, Object)
   spec.csharp:
   - uid: System.Func`2
     name: Func
@@ -798,10 +686,11 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: GanaSDK.XmlAdapter.RestResponse
-    name: RestResponse
-    nameWithType: RestResponse
-    fullName: GanaSDK.XmlAdapter.RestResponse
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -822,10 +711,11 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: GanaSDK.XmlAdapter.RestResponse
-    name: RestResponse
-    nameWithType: RestResponse
-    fullName: GanaSDK.XmlAdapter.RestResponse
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )

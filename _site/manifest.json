@@ -12,7 +12,7 @@
           "hash": "DIg9HHa80ywfuburyfJ6IQKG6LkBFKGMsSz9swp9CuU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.DBConnection.html",
-          "hash": "22d4cZ9jqE7K+94BnC6mBHuO3zB8N1kRMM3KEfXbs/4="
+          "hash": "7442OgxZ+qNrND6ILiK2ptJ6Vu8pP9w+CV7tOA33bB4="
         }
       },
       "is_incremental": false,
@@ -72,7 +72,7 @@
           "hash": "aGNzsHGxWAEbzRJLBAtXz/l/z/kbhskyvIGNQzvfRI0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,22 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.XmlAdapter.JSON.html",
-          "hash": "+Wli3GET0FSNMIWcv96g17VdSAJqJLfdaFEx+dHdLfc="
+          "hash": "xj0AXOdDwcGXYTR4cDIh3V3PegvNDlHRoGd3+HKVtH4="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/GanaSDK.XmlAdapter.RequestOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/GanaSDK.XmlAdapter.RequestOptions.html",
-          "hash": "r9ejV7wdJmoeXVRHMfcZj2ShB18S/ZEFd7DBfv2uAHo="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.XmlAdapter.RestRequest.html",
-          "hash": "9/Je8JNiOXap0UXobjeKtv3PPFjcsFJAqNeMzalyNJs="
+          "hash": "LAhy01x1TCh7+QrMo6i41HE8kHR0QkOmdlgkJpsgtqc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.XmlAdapter.RestRequestOptions.html",
-          "hash": "+ajtuxjbkgwrLoSv+gUNNBfu8KpaIzyGIY6zltNwgj4="
+          "hash": "Dcp7F/KtaN0T2qrHqoC46rDd2UD8auuwtG84l9Gkm1c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.XmlAdapter.RestResponse.html",
-          "hash": "b2+H6V1Nb3NdyaatKSKJJot4FdhrxQCORg505KRH00k="
+          "hash": "fQa6eEaWiDdckqOdxlgTH5i/g9HyaTeRCxbhZamoLpE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.XmlAdapter.RestXmlAdapter.html",
-          "hash": "tyWVNdMVfed+PSAFvQ4+8R4YkboWLen0neB7koLJfn4="
+          "hash": "3v/LjDUiqikC0nSQZgFnTWp67X8HWznUGKvkvSZs2Js="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.XmlAdapter.XmlAdapter.html",
-          "hash": "7IzgcIqIcynfa/YjCcEB2kk731q6jzn2LnOuWLNdYiY="
+          "hash": "dZX/uFo+6sselmxGZELoYdhB+n8XpqIBG/VJsNvGBi0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GanaSDK.XmlAdapter.html",
-          "hash": "r7OLNPw7+HZsx40sqXgdQDCAB0sxZumKw9FDuOqMpjk="
+          "hash": "tS3H5s3l+8JWq9lNuNjTQ/oTAWQ3YCOMhXaBZAh8HQg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HOk4Rrw2mmUkRgYW4mxktW9F+LkMJHr6Apw0Z55OdKg="
+          "hash": "eyKHyqi+AqjHTU2c0IxDZLrAv44oQQ8wXesSP5Fkm/A="
         }
       },
       "is_incremental": false,
@@ -226,8 +214,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 11,
-          "skipped_file_count": 10
+          "total_file_count": 10,
+          "skipped_file_count": 2
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

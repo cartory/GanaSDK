@@ -5,7 +5,6 @@ items:
   id: RestXmlAdapter
   parent: GanaSDK.XmlAdapter
   children:
-  - GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
   - GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
   langs:
   - csharp
@@ -21,7 +20,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: RestXmlAdapter
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 34
+    startLine: 31
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -34,7 +33,8 @@ items:
   - System.Object
   - GanaSDK.XmlAdapter.XmlAdapter
   inheritedMembers:
-  - GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+  - GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
+  - GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -48,44 +48,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  commentId: M:GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  id: Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  parent: GanaSDK.XmlAdapter.RestXmlAdapter
-  langs:
-  - csharp
-  - vb
-  name: Fetch(RequestOptions)
-  nameWithType: RestXmlAdapter.Fetch(RequestOptions)
-  fullName: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  type: Method
-  source:
-    remote:
-      path: core/XmlAdapter/RestXmlAdapter.cs
-      branch: master
-      repo: https://github.com/cartory/GanaSDK.git
-    id: Fetch
-    path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 36
-  assemblies:
-  - GanaSDK
-  namespace: GanaSDK.XmlAdapter
-  syntax:
-    content: protected override string Fetch(RequestOptions requestOptions)
-    parameters:
-    - id: requestOptions
-      type: GanaSDK.XmlAdapter.RequestOptions
-    return:
-      type: System.String
-    content.vb: Protected Overrides Function Fetch(requestOptions As RequestOptions) As String
-  overridden: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  overload: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch*
-  modifiers.csharp:
-  - protected
-  - override
-  modifiers.vb:
-  - Protected
-  - Overrides
 - uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
   commentId: M:GanaSDK.XmlAdapter.RestXmlAdapter.Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
   id: Fetch(System.String,GanaSDK.XmlAdapter.RestRequestOptions)
@@ -104,20 +66,20 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: Fetch
     path: core/XmlAdapter/RestXmlAdapter.cs
-    startLine: 53
+    startLine: 33
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
   syntax:
-    content: public string Fetch(string URL, RestRequestOptions requestOptions)
+    content: public string Fetch(string URL, RestRequestOptions options)
     parameters:
     - id: URL
       type: System.String
-    - id: requestOptions
+    - id: options
       type: GanaSDK.XmlAdapter.RestRequestOptions
     return:
       type: System.String
-    content.vb: Public Function Fetch(URL As String, requestOptions As RestRequestOptions) As String
+    content.vb: Public Function Fetch(URL As String, options As RestRequestOptions) As String
   overload: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch*
   modifiers.csharp:
   - public
@@ -142,21 +104,138 @@ references:
   name: XmlAdapter
   nameWithType: XmlAdapter
   fullName: GanaSDK.XmlAdapter.XmlAdapter
-- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
-  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
   parent: GanaSDK.XmlAdapter.XmlAdapter
   isExternal: true
-  name: ToXml(String, String)
-  nameWithType: XmlAdapter.ToXml(String, String)
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.String)
+  name: ToXml(String, Object)
+  nameWithType: XmlAdapter.ToXml(String, Object)
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Object)
   spec.csharp:
-  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
     name: ToXml
     nameWithType: XmlAdapter.ToXml
     fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
   - name: (
     nameWithType: (
     fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
+    name: ToXml
+    nameWithType: XmlAdapter.ToXml
+    fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: GanaSDK.XmlAdapter.XmlAdapter
+  isExternal: true
+  name: ToXml(String, Dictionary<String, String>)
+  nameWithType: XmlAdapter.ToXml(String, Dictionary<String, String>)
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  nameWithType.vb: XmlAdapter.ToXml(String, Dictionary(Of String, String))
+  fullName.vb: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: ToXml(String, Dictionary(Of String, String))
+  spec.csharp:
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: ToXml
+    nameWithType: XmlAdapter.ToXml
+    fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: ToXml
+    nameWithType: XmlAdapter.ToXml
+    fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
   - uid: System.String
     name: String
     nameWithType: String
@@ -173,27 +252,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-  spec.vb:
-  - uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
-    name: ToXml
-    nameWithType: XmlAdapter.ToXml
-    fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
@@ -482,53 +540,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  parent: GanaSDK.XmlAdapter.XmlAdapter
-  name: Fetch(RequestOptions)
-  nameWithType: XmlAdapter.Fetch(RequestOptions)
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  spec.csharp:
-  - uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-    name: Fetch
-    nameWithType: XmlAdapter.Fetch
-    fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: GanaSDK.XmlAdapter.RequestOptions
-    name: RequestOptions
-    nameWithType: RequestOptions
-    fullName: GanaSDK.XmlAdapter.RequestOptions
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-    name: Fetch
-    nameWithType: XmlAdapter.Fetch
-    fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: GanaSDK.XmlAdapter.RequestOptions
-    name: RequestOptions
-    nameWithType: RequestOptions
-    fullName: GanaSDK.XmlAdapter.RequestOptions
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch*
   commentId: Overload:GanaSDK.XmlAdapter.RestXmlAdapter.Fetch
   name: Fetch
   nameWithType: RestXmlAdapter.Fetch
   fullName: GanaSDK.XmlAdapter.RestXmlAdapter.Fetch
-- uid: GanaSDK.XmlAdapter.RequestOptions
-  commentId: T:GanaSDK.XmlAdapter.RequestOptions
-  parent: GanaSDK.XmlAdapter
-  name: RequestOptions
-  nameWithType: RequestOptions
-  fullName: GanaSDK.XmlAdapter.RequestOptions
 - uid: System.String
   commentId: T:System.String
   parent: System

@@ -6,6 +6,8 @@ items:
   parent: GanaSDK.XmlAdapter
   children:
   - GanaSDK.XmlAdapter.RestRequest.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
+  - GanaSDK.XmlAdapter.RestRequest.Validate(System.Object)
+  - GanaSDK.XmlAdapter.RestRequest.Validate(System.Object,System.String[])
   - GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate(System.Object)
   langs:
   - csharp
@@ -112,13 +114,13 @@ items:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
   syntax:
-    content: protected static Dictionary<string, string> ValidateAndCreate(object args)
+    content: protected static object ValidateAndCreate(object args)
     parameters:
     - id: args
       type: System.Object
     return:
-      type: System.Collections.Generic.Dictionary{System.String,System.String}
-    content.vb: Protected Shared Function ValidateAndCreate(args As Object) As Dictionary(Of String, String)
+      type: System.Object
+    content.vb: Protected Shared Function ValidateAndCreate(args As Object) As Object
   overload: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate*
   modifiers.csharp:
   - protected
@@ -126,6 +128,85 @@ items:
   modifiers.vb:
   - Protected
   - Shared
+- uid: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object)
+  commentId: M:GanaSDK.XmlAdapter.RestRequest.Validate(System.Object)
+  id: Validate(System.Object)
+  parent: GanaSDK.XmlAdapter.RestRequest
+  langs:
+  - csharp
+  - vb
+  name: Validate(Object)
+  nameWithType: RestRequest.Validate(Object)
+  fullName: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/RestRequest.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Validate
+    path: core/XmlAdapter/RestRequest.cs
+    startLine: 22
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: protected static Dictionary<string, string> Validate(object args)
+    parameters:
+    - id: args
+      type: System.Object
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Protected Shared Function Validate(args As Object) As Dictionary(Of String, String)
+  overload: GanaSDK.XmlAdapter.RestRequest.Validate*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object,System.String[])
+  commentId: M:GanaSDK.XmlAdapter.RestRequest.Validate(System.Object,System.String[])
+  id: Validate(System.Object,System.String[])
+  parent: GanaSDK.XmlAdapter.RestRequest
+  langs:
+  - csharp
+  - vb
+  name: Validate(Object, String[])
+  nameWithType: RestRequest.Validate(Object, String[])
+  fullName: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object, System.String[])
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/RestRequest.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: Validate
+    path: core/XmlAdapter/RestRequest.cs
+    startLine: 41
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: protected static Dictionary<string, string> Validate(object args, string[] exclude)
+    parameters:
+    - id: args
+      type: System.Object
+    - id: exclude
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Protected Shared Function Validate(args As Object, exclude As String()) As Dictionary(Of String, String)
+  overload: GanaSDK.XmlAdapter.RestRequest.Validate*
+  nameWithType.vb: RestRequest.Validate(Object, String())
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: GanaSDK.XmlAdapter.RestRequest.Validate(System.Object, System.String())
+  name.vb: Validate(Object, String())
 references:
 - uid: GanaSDK.XmlAdapter
   commentId: N:GanaSDK.XmlAdapter
@@ -724,3 +805,34 @@ references:
   name: ValidateAndCreate
   nameWithType: RestRequest.ValidateAndCreate
   fullName: GanaSDK.XmlAdapter.RestRequest.ValidateAndCreate
+- uid: GanaSDK.XmlAdapter.RestRequest.Validate*
+  commentId: Overload:GanaSDK.XmlAdapter.RestRequest.Validate
+  name: Validate
+  nameWithType: RestRequest.Validate
+  fullName: GanaSDK.XmlAdapter.RestRequest.Validate
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

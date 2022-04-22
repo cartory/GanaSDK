@@ -5,8 +5,8 @@ items:
   id: XmlAdapter
   parent: GanaSDK.XmlAdapter
   children:
-  - GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  - GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
+  - GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
   langs:
   - csharp
   - vb
@@ -21,7 +21,7 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: XmlAdapter
     path: core/XmlAdapter/XmlAdapter.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
@@ -48,53 +48,16 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  id: Fetch(GanaSDK.XmlAdapter.RequestOptions)
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Object)
+  id: ToXml(System.String,System.Object)
   parent: GanaSDK.XmlAdapter.XmlAdapter
   langs:
   - csharp
   - vb
-  name: Fetch(RequestOptions)
-  nameWithType: XmlAdapter.Fetch(RequestOptions)
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch(GanaSDK.XmlAdapter.RequestOptions)
-  type: Method
-  source:
-    remote:
-      path: core/XmlAdapter/XmlAdapter.cs
-      branch: master
-      repo: https://github.com/cartory/GanaSDK.git
-    id: Fetch
-    path: core/XmlAdapter/XmlAdapter.cs
-    startLine: 15
-  assemblies:
-  - GanaSDK
-  namespace: GanaSDK.XmlAdapter
-  syntax:
-    content: protected abstract string Fetch(RequestOptions requestOptions)
-    parameters:
-    - id: requestOptions
-      type: GanaSDK.XmlAdapter.RequestOptions
-    return:
-      type: System.String
-    content.vb: Protected MustOverride Function Fetch(requestOptions As RequestOptions) As String
-  overload: GanaSDK.XmlAdapter.XmlAdapter.Fetch*
-  modifiers.csharp:
-  - protected
-  - abstract
-  modifiers.vb:
-  - Protected
-  - MustOverride
-- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
-  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.String)
-  id: ToXml(System.String,System.String)
-  parent: GanaSDK.XmlAdapter.XmlAdapter
-  langs:
-  - csharp
-  - vb
-  name: ToXml(String, String)
-  nameWithType: XmlAdapter.ToXml(String, String)
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.String)
+  name: ToXml(String, Object)
+  nameWithType: XmlAdapter.ToXml(String, Object)
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Object)
   type: Method
   source:
     remote:
@@ -103,20 +66,20 @@ items:
       repo: https://github.com/cartory/GanaSDK.git
     id: ToXml
     path: core/XmlAdapter/XmlAdapter.cs
-    startLine: 17
+    startLine: 14
   assemblies:
   - GanaSDK
   namespace: GanaSDK.XmlAdapter
   syntax:
-    content: public virtual string ToXml(string tag, string json)
+    content: public virtual string ToXml(string tag, object json)
     parameters:
     - id: tag
       type: System.String
     - id: json
-      type: System.String
+      type: System.Object
     return:
       type: System.String
-    content.vb: Public Overridable Function ToXml(tag As String, json As String) As String
+    content.vb: Public Overridable Function ToXml(tag As String, json As Object) As String
   overload: GanaSDK.XmlAdapter.XmlAdapter.ToXml*
   modifiers.csharp:
   - public
@@ -124,6 +87,48 @@ items:
   modifiers.vb:
   - Public
   - Overridable
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: ToXml(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: GanaSDK.XmlAdapter.XmlAdapter
+  langs:
+  - csharp
+  - vb
+  name: ToXml(String, Dictionary<String, String>)
+  nameWithType: XmlAdapter.ToXml(String, Dictionary<String, String>)
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: core/XmlAdapter/XmlAdapter.cs
+      branch: master
+      repo: https://github.com/cartory/GanaSDK.git
+    id: ToXml
+    path: core/XmlAdapter/XmlAdapter.cs
+    startLine: 24
+  assemblies:
+  - GanaSDK
+  namespace: GanaSDK.XmlAdapter
+  syntax:
+    content: public virtual string ToXml(string tag, Dictionary<string, string> args)
+    parameters:
+    - id: tag
+      type: System.String
+    - id: args
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.String
+    content.vb: Public Overridable Function ToXml(tag As String, args As Dictionary(Of String, String)) As String
+  overload: GanaSDK.XmlAdapter.XmlAdapter.ToXml*
+  nameWithType.vb: XmlAdapter.ToXml(String, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: GanaSDK.XmlAdapter.XmlAdapter.ToXml(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: ToXml(String, Dictionary(Of String, String))
 references:
 - uid: GanaSDK.XmlAdapter
   commentId: N:GanaSDK.XmlAdapter
@@ -422,17 +427,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: GanaSDK.XmlAdapter.XmlAdapter.Fetch*
-  commentId: Overload:GanaSDK.XmlAdapter.XmlAdapter.Fetch
-  name: Fetch
-  nameWithType: XmlAdapter.Fetch
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.Fetch
-- uid: GanaSDK.XmlAdapter.RequestOptions
-  commentId: T:GanaSDK.XmlAdapter.RequestOptions
-  parent: GanaSDK.XmlAdapter
-  name: RequestOptions
-  nameWithType: RequestOptions
-  fullName: GanaSDK.XmlAdapter.RequestOptions
+- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml*
+  commentId: Overload:GanaSDK.XmlAdapter.XmlAdapter.ToXml
+  name: ToXml
+  nameWithType: XmlAdapter.ToXml
+  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -440,8 +439,120 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: GanaSDK.XmlAdapter.XmlAdapter.ToXml*
-  commentId: Overload:GanaSDK.XmlAdapter.XmlAdapter.ToXml
-  name: ToXml
-  nameWithType: XmlAdapter.ToXml
-  fullName: GanaSDK.XmlAdapter.XmlAdapter.ToXml
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
